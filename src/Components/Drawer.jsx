@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 import logo from '../assets/image/logo/cobrand-primary.png'
 import darkLogo from '../assets/image/logo/cobrand-secondary.png'
+import ThemeMode from './ThemeMode';
+
 
 const Drawer = ({ darkMode }) => {
   return (
@@ -19,13 +21,15 @@ const Drawer = ({ darkMode }) => {
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
 
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4 space-y-3">
-          <div className='w-[200px]'>
+          <div className='w-[200px] flex items-center'>
             {darkMode ?
               <img src={darkLogo} alt='coBrand primary logo' />
               :
               <img src={logo} alt='coBrand primary logo' />
             }
+            <ThemeMode darkMode={darkMode} />
           </div>
+
           {/* Sidebar content here */}
           <NavLink to='/' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
             <span className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Home</span>
@@ -49,6 +53,7 @@ const Drawer = ({ darkMode }) => {
 
         </ul>
       </div>
+
     </div >
   )
 }
