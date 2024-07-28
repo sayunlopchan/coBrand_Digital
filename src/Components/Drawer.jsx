@@ -9,9 +9,9 @@ import ThemeMode from './ThemeMode';
 
 const Drawer = ({ darkMode }) => {
   return (
-    <div className="drawer drawer-end">
+    <div className="drawer drawer-end ">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">
+      <div className="drawer-content ">
         {/* Page content here */}
         <label htmlFor="my-drawer-4">
           <RxHamburgerMenu size={30} />
@@ -20,7 +20,7 @@ const Drawer = ({ darkMode }) => {
       <div className="drawer-side">
         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
 
-        <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4 space-y-3">
+        <nav className="menu bg-base-200 text-base-content min-h-full w-80 p-4 space-y-3">
           <div className='w-[200px] flex items-center'>
             {darkMode ?
               <img src={darkLogo} alt='coBrand primary logo' />
@@ -32,26 +32,26 @@ const Drawer = ({ darkMode }) => {
 
           {/* Sidebar content here */}
           <NavLink to='/' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
-            <span className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Home</span>
+            Home
           </NavLink>
 
           <NavLink to='service' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
-            <span className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Service</span>
+            Service
           </NavLink>
 
           <NavLink to='courses' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
-            <span className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Courses</span>
+            Courses
           </NavLink>
 
           <NavLink to='about' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
-            <span className={({ isActive }) => isActive ? 'text-blue-500' : ''}>About us</span>
+            About us
           </NavLink>
 
-          <NavLink to='context' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
-            <span className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Contect us</span>
+          <NavLink to='contact' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
+            Contact us
           </NavLink>
 
-        </ul>
+        </nav>
       </div>
 
     </div >
