@@ -2,8 +2,6 @@ import React from 'react'
 import logo from '../assets/image/logo/cobrand-primary.png'
 import darkLogo from '../assets/image/logo/cobrand-secondary.png'
 import { NavLink } from 'react-router-dom'
-// import { IoSunny } from "react-icons/io5";
-// import { IoIosMoon } from "react-icons/io";
 import Drawer from './Drawer';
 import ThemeMode from './ThemeMode';
 
