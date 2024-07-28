@@ -3,13 +3,14 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
 import chart from '../../assets/animation/chart.json'
+import circleOrb from '../../assets/animation/circleOrb.json'
 
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <div className='lg:grid lg:grid-cols-5 z-10'>
-      <Lottie animationData={chart} className='absolute opacity-20' />
-      <div className='col-span-3 flex justify-center sm:flex-none sm:justify-normal px-7 mt-10'>
+    <div className='lg:grid lg:grid-cols-5'>
+      <Lottie animationData={chart} className='absolute opacity-50' />
+      <div className='col-span-3 flex justify-center sm:flex-none sm:justify-normal px-7 mt-10 z-10'>
         <div className=''>
           <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
           <TypeAnimation
@@ -43,7 +44,7 @@ const HomeBanner = ({ darkMode }) => {
 
       <div className='col-span-2'>
 
-
+        <Lottie animationData={circleOrb} />
       </div>
 
     </div>
