@@ -16,7 +16,7 @@ const HomeBanner = ({ darkMode }) => {
       <Lottie animationData={chart} className='absolute opacity-50' />
 
       <section className='lg:col-span-3 flex flex-col justify-center items-center '>
-        <div className='px-10'>
+        <div>
 
           <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
           <TypeAnimation

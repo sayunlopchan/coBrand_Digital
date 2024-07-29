@@ -11,7 +11,7 @@ import GoogleReviews from './UI/GoogleReviews'
 
 const HomePage = ({ darkMode }) => {
   return (
-    <div>
+    <div className='p-10'>
       <HomeBanner darkMode={darkMode} />
       <AboutUs darkMode={darkMode} />
       <OurServices darkMode={darkMode} />

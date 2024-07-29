@@ -10,7 +10,7 @@ const CardUi = ({ data }) => {
         return (
           <div
             key={idx}
-            className='relative  flex flex-col items-center w-96 h-[300px] pt-8 hover:shadow-lg transition-shadow duration-700 group'
+            className='relative flex flex-col items-center w-96 h-[300px] pt-8 hover:shadow-lg transition-shadow duration-700 group'
           >
             <div
               className='absolute border rounded-full h-[150px] w-[150px] transition-transform duration-300 group-hover:scale-110 flex items-center justify-center'

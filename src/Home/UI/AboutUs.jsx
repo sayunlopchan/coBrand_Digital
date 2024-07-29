@@ -30,7 +30,7 @@ const AboutUs = ({ darkMode }) => {
           </div>
         </section>
 
-        <section className='lg:col-span-2 px-10 '>
+        <section className='lg:col-span-2 '>
           <img src={secondary_logo} alt="primary-logo" className='w-[400px] mx-auto' />
 
           <h2 className='text-lg font-bold underline underline-offset-8 py-2'>Who we are?</h2>
