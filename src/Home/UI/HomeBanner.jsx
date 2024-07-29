@@ -12,7 +12,7 @@ import influencer_marketing from '../../assets/image/icons/influencer-marketing.
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <div className='grid grid-rows-2 lg:grid-rows-none lg:grid-cols-5'>
+    <div className='grid lg:grid-rows-none lg:grid-cols-5'>
       <Lottie animationData={chart} className='absolute opacity-50' />
 
       <section className='lg:col-span-3 flex flex-col justify-center items-center '>

@@ -11,16 +11,16 @@ const AboutUs = ({ darkMode }) => {
 
       <h1 className='text-center font-bold text-lg md:text-4xl'>About us</h1>
 
-      <div className='grid grid-rows-2 lg:grid-rows-none lg:grid-cols-5'>
-        <section className='lg:col-span-3'>
-          <div className='relative p-10'>
+      <div className='grid lg:grid-rows-none lg:grid-cols-5 '>
+        <section className='lg:col-span-3 '>
+          <div className='relative px-10 md:p-10'>
             <img src={company1} alt="company-1" className=' w-full border-2 ' />
             <img src={company2} alt="company-2" className='absolute w-[80px] md:w-[120px] bottom-10 left-5 border-2' />
             <img src={company3} alt="company-3" className='absolute w-[80px] md:w-[170px] bottom-10 right-5 border-2' />
           </div>
         </section>
 
-        <section className='lg:col-span-2 px-10'>
+        <section className='lg:col-span-2 px-10 '>
           <img src={secondary_logo} alt="primary-logo" className='w-[400px] mx-auto' />
 
           <h2 className='text-lg font-bold underline underline-offset-8 py-2'>Who we are?</h2>
