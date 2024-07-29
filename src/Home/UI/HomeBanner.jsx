@@ -44,12 +44,12 @@ const HomeBanner = ({ darkMode }) => {
         </div>
       </div>
 
-      <div className='relative col-span-2'>
+      <div className='relative col-span-2 bg-red-900'>
 
         <Lottie animationData={circleOrb} />
         <img src={rocket} alt="" className='rocket' />
         <img src={influencer_marketing} alt="" className='influencer-marketing' />
-        <img src={influencer_marketing} alt="" className='absolute w-[30px] sm:w-[60px] top-[50vh] left-[20vw] sm:top-[70vh] sm:right-[25vw] md:top-[96vh] md:right-[20vw] lg:top-[48vh] lg:left-[10vw]' />
+        <img src={influencer_marketing} alt="" className='web-development' />
       </div>
 
     </div>
