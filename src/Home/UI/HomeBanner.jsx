@@ -13,7 +13,7 @@ const HomeBanner = ({ darkMode }) => {
     <div className='grid grid-rows-2 lg:grid-rows-none lg:grid-cols-5'>
       <Lottie animationData={chart} className='absolute opacity-50' />
 
-      <div className='lg:col-span-3 flex justify-center items-center z-10'>
+      <div className='lg:col-span-3 flex justify-center items-center '>
         <div className='px-10'>
           <div>
             <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
