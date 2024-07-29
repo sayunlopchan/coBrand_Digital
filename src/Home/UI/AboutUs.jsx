@@ -5,7 +5,17 @@ import company3 from '../../assets/image/company/company-3.jpg'
 import company4 from '../../assets/image/company/company-4.jpg'
 
 import secondary_logo from '../../assets/image/logo/cobrand-primary.png'
+import { NavLink, useNavigate } from 'react-router-dom'
+
+
+
+
 const AboutUs = ({ darkMode }) => {
+
+  const nav = useNavigate();
+
+
+
   return (
     <div>
 
@@ -24,8 +34,13 @@ const AboutUs = ({ darkMode }) => {
           <img src={secondary_logo} alt="primary-logo" className='w-[400px] mx-auto' />
 
           <h2 className='text-lg font-bold underline underline-offset-8 py-2'>Who we are?</h2>
+
           <p className={`${darkMode ? 'text-gray-500' : ''}`}>
             <strong>CoBrand Digital</strong> is a dynamic agency dedicated to accelerating your business's success in the digital landscape. We specialize in driving digital growth through tailored strategies and cutting-edge solutions. Our comprehensive training programs cover essential skills including web design and development, graphic design, content creation, social media management, and photography/videography. Whether you're looking to enhance your online presence or upskill your team, CoBrand Digital is your partner in navigating and thriving in the digital world.</p>
+
+          <button onClick={() => nav('about')} className='my-5 py-2 px-4 border-2 border-blue-700 rounded-xl hover:scale-90 duration-300'>
+            Read more..
+          </button>
         </section>
       </div >
 

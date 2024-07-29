@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../Components/Header'
+import Footer from '../Components/Footer'
 
 
 
@@ -14,6 +15,9 @@ const RootLayout = ({ darkMode, setDarkMode }) => {
       <main>
         <Outlet context={{ darkMode, setDarkMode }} />
       </main>
+      <footer>
+        <Footer darkMode={darkMode} />
+      </footer>
 
     </div>
   )

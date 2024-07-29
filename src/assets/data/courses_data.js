@@ -1,8 +1,9 @@
-import course1 from '../img/services/web_development_and_design.png'
-import course2 from '../img/services/graphic-design.png'
-import course3 from '../img/services/photo-video.png'
-import course4 from '../img/services/social-media-marketing.png'
-import course5 from '../img/services/influencer-marketing.png'
+import course1 from '../courses/web_development_and_design.png'
+import course2 from '../courses/graphic-design.png'
+import course3 from '../courses/photo-video.png'
+import course4 from '../courses/social-media-marketing.png'
+import course5 from '../courses/influencer-marketing.png'
+
 
 
 let courses_data = [
