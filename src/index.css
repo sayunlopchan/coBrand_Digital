@@ -14,5 +14,5 @@
   @apply absolute w-[30px] sm:w-[60px] top-[22vh] right-[27vw] sm:top-[26vh] sm:right-[24vw] md:top-[30vh] md:right-[30vw] lg:top-32 lg:right-24 animate-rotate-scale-wave;
 }
 .influencer-marketing {
-  @apply absolute w-[30px] sm:w-[60px] top-[22vh] right-[27vw] sm:top-[26vh] sm:right-[24vw] md:top-[30vh] md:right-[30vw] lg:top-32 lg:right-24 animate-rotate-scale-wave;
+  @apply absolute w-[30px] sm:w-[60px] top-[48vh] right-[18vw] sm:top-[79vh] sm:right-[25vw] md:top-[80vh] md:right-[20vw] lg:top-[50vh] lg:right-[5vw];
 }

@@ -48,7 +48,8 @@ const HomeBanner = ({ darkMode }) => {
 
         <Lottie animationData={circleOrb} />
         <img src={rocket} alt="" className='rocket' />
-        <img src={influencer_marketing} alt="" className='absolute w-[30px] sm:w-[60px] top-[42vh] right-[20vw] sm:top-[86vh] sm:right-[25vw] md:top-[80vh] md:right-[20vw] lg:top-[50vh] lg:right-[5vw]' />
+        <img src={influencer_marketing} alt="" className='influencer-marketing' />
+        <img src={influencer_marketing} alt="" className='absolute w-[30px] sm:w-[60px] top-[50vh] left-[20vw] sm:top-[70vh] sm:right-[25vw] md:top-[96vh] md:right-[20vw] lg:top-[48vh] lg:left-[10vw]' />
       </div>
 
     </div>
