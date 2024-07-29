@@ -10,9 +10,9 @@ import influencer_marketing from '../../assets/image/icons/influencer-marketing.
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <div className='lg:grid lg:grid-cols-5'>
+    <div className='lg:grid lg:grid-cols-5 h-[130vh]'>
       <Lottie animationData={chart} className='absolute opacity-50' />
-      <div className='col-span-3 flex justify-center sm:flex-none sm:justify-normal px-7 mt-10 z-10'>
+      <div className='col-span-3 flex justify-center sm:flex-none sm:justify-normal px-7 mt-10 z-10 h-[50vh] md:block'>
         <div className=''>
           <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
           <TypeAnimation
@@ -44,7 +44,7 @@ const HomeBanner = ({ darkMode }) => {
         </div>
       </div>
 
-      <div className='relative col-span-2 bg-green-300'>
+      <div className='relative col-span-2 h-[50vh] md:block'>
 
         <Lottie animationData={circleOrb} />
         <img src={rocket} alt="" className='rocket' />
