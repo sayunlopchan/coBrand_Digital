@@ -8,3 +8,11 @@
   @apply m-0 p-0 box-border;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* homebanner css for  */
+.rocket {
+  @apply absolute w-[30px] sm:w-[60px] top-[22vh] right-[27vw] sm:top-[26vh] sm:right-[24vw] md:top-[30vh] md:right-[30vw] lg:top-32 lg:right-24 animate-rotate-scale-wave;
+}
+.influencer-marketing {
+  @apply absolute w-[30px] sm:w-[60px] top-[22vh] right-[27vw] sm:top-[26vh] sm:right-[24vw] md:top-[30vh] md:right-[30vw] lg:top-32 lg:right-24 animate-rotate-scale-wave;
+}

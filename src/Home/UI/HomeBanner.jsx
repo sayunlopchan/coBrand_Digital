@@ -4,8 +4,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 import chart from '../../assets/animation/chart.json'
 import circleOrb from '../../assets/animation/circleOrb.json'
-import idea from '../../assets/image/3d Vector icons/idea.png'
 import rocket from '../../assets/image/3d Vector icons/rocket.png'
+import influencer_marketing from '../../assets/image/icons/influencer-marketing.png'
+
 
 const HomeBanner = ({ darkMode }) => {
   return (
@@ -43,11 +44,11 @@ const HomeBanner = ({ darkMode }) => {
         </div>
       </div>
 
-      <div className='relative col-span-2'>
+      <div className='relative col-span-2 bg-green-300'>
 
         <Lottie animationData={circleOrb} />
-        <img src={idea} alt="" className='absolute w-[60px] top-[48vh] left-[13vh] md:bottom-[60vh] md:left-[18vw] lg:top-[26vw] lg:left-[8vw] animate-scale-wave-slow' />
-        <img src={rocket} alt="" className='absolute w-[60px] top-[15vh] right-[20vw] md:top-[30vh] md:right-[30vw] lg:top-32 lg:right-24 animate-rotate-scale-wave' />
+        <img src={rocket} alt="" className='rocket' />
+        <img src={influencer_marketing} alt="" className='absolute w-[30px] sm:w-[60px] top-[42vh] right-[20vw] sm:top-[86vh] sm:right-[25vw] md:top-[80vh] md:right-[20vw] lg:top-[50vh] lg:right-[5vw]' />
       </div>
 
     </div>
