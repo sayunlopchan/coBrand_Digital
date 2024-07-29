@@ -8,7 +8,7 @@ import ThemeMode from './ThemeMode';
 
 const Header = ({ darkMode, setDarkMode }) => {
   return (
-    <div className={`flex justify-between items-center p-2 ${darkMode ? 'shadow-sm shadow-gray-800' : 'shadow-md'}`}>
+    <div className={`flex justify-between items-center p-2 sticky top-0 z-10 ${darkMode ? 'bg-gray-900 shadow-sm shadow-gray-800' : 'shadow-md bg-white'}`}>
 
       {/* Logo */}
       <NavLink to='/' className='w-[200px]'>
