@@ -10,42 +10,44 @@ import influencer_marketing from '../../assets/image/icons/influencer-marketing.
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <div className='lg:grid lg:grid-cols-5 h-[100vh]'>
+    <div className='grid grid-rows-2 lg:grid-rows-none lg:grid-cols-5'>
       <Lottie animationData={chart} className='absolute opacity-50' />
-      <div className='col-span-3 flex justify-center sm:flex-none sm:justify-normal px-7 mt-10 z-10'>
-        <div className=''>
-          <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
-          <TypeAnimation
-            className=' text-3xl font-bold md:text-7xl  md:font-semibold md:py-4'
-            sequence={[
-              'agency',
-              1000,
-              'analysis',
-              1000,
-              'value',
-              1000,
-            ]}
-            wrapper="span"
-            speed={70}
-            style={{
-              display: 'inline-block',
-              background: 'linear-gradient(to right, purple,  pink)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
-            }}
-            repeat={Infinity}
-          />
 
-          <span className='text-2xl md:text-4xl md:py-4 font-bold md:font-semibold '>
-            In Nepal
-          </span>
-          <h2 className={`py-5 text-sm md:text-lg w-[80vw] md:w-[52vw] ${darkMode ? 'text-gray-500' : ''}`}>Helping Brands, Improving Performance: Cobrand Digital Pvt Ltd Your Spark in the Digital Universe!
-          </h2>
+      <div className='lg:col-span-3 flex justify-center items-center z-10'>
+        <div className='px-10'>
+          <div>
+            <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
+            <TypeAnimation
+              className=' text-3xl font-bold md:text-7xl  md:font-semibold md:py-4'
+              sequence={[
+                'agency',
+                1000,
+                'analysis',
+                1000,
+                'value',
+                1000,
+              ]}
+              wrapper="span"
+              speed={70}
+              style={{
+                display: 'inline-block',
+                background: 'linear-gradient(to right, purple,  pink)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+              repeat={Infinity}
+            />
+
+            <span className='text-2xl md:text-4xl md:py-4 font-bold md:font-semibold '>
+              In Nepal
+            </span>
+            <h2 className={`py-5 text-sm md:text-lg w-[80vw] md:w-[52vw] ${darkMode ? 'text-gray-500' : ''}`}>Helping Brands, Improving Performance: Cobrand Digital Pvt Ltd Your Spark in the Digital Universe!
+            </h2>
+          </div>
         </div>
       </div>
 
-      <div className='relative col-span-2 bg-red-900'>
-
+      <div className='relative lg:col-span-2 m-auto'>
         <Lottie animationData={circleOrb} />
         <img src={rocket} alt="" className='rocket' />
         <img src={influencer_marketing} alt="" className='influencer-marketing' />
