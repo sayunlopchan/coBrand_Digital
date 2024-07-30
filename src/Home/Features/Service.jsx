@@ -1,13 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import img from '../../assets/image/company/breadcrumb-bg-1.jpg'
+// import img from '../../assets/image/company/breadcrumbBg.jpg'
+import CardUi from '../../Components/CardUi'
+
+import data from '../../assets/data/courses_data'
+import seoImg from '../../assets/image/company/seo-5-bg-1.webp'
+import optimizeImg from '../../assets/image/company/optimize-shape.png'
+
+
+
 
 const Services = ({ darkMode }) => {
   return (
     <div className='relative'>
 
-      <div className="bg-[url('../../assest/image/company/breadcrumb-bg-1.jpg')] bg-cover absolute w-full h-[60vh] -top-[140px]">
-        <div className=' w-full h-[60vh] bg-black opacity-75'>
+      <div className='breadcrumb-bg absolute w-full h-[60vh] -top-[140px]'>
+        <div className='w-full h-[60vh] bg-black opacity-75'>
         </div>
       </div>
 
@@ -32,11 +40,46 @@ const Services = ({ darkMode }) => {
         </div>
       </div >
 
-      <div className='bg-white text-center font-bold text-lg '>
-        <h1 className='text-2xl font-bold'>Check Our Courses</h1>
+      <div className='p-10'>
+
+        <div className='lg:grid lg:grid-cols-2 '>
+          <div className='relative mx-auto py-10'>
+            <img src={seoImg} alt="img" className='w-full md:w-[400px] lg:w-[400px]' />
+            <img src={optimizeImg} alt="img" className={`absolute w-[100px] top-0 shadow-sm ${darkMode ? '' : ''}`} />
+
+          </div>
+
+          <div className='space-y-5 flex flex-col items-center'>
+            <span className='text-gray-500'>Best SMM results?</span>
+            <h1 className=' text-3xl lg:text-6xl font-bold'>
+              Optimize your
+              social media</h1>
+            <ul className='space-y-5'>
+              <li>
+                <h4>Know Your Audience & Goals</h4>
+                <p>Define their demographics, interests, and online behavior.</p>
+              </li>
+              <li>
+                <h4>Creative & Compelling Content</h4>
+                <p>Be Authentic & Consistent,Always Focus on value.</p>
+              </li>
+              <li>
+                <h4>Engage & Analyze</h4>
+                <p>Social media is a two-way street! Actively engage with your followers</p>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+
+
       </div>
 
-
+      <div>
+        <h1 className='text-center text-2xl font-bold'>Check Our Courses</h1>
+        <CardUi data={data} darkMode={darkMode} />
+      </div>
 
     </div >
   )

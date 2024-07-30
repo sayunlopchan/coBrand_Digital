@@ -19,7 +19,7 @@
 .web-development {
   @apply absolute w-[30px] sm:w-[60px] bottom-[20vh] left-[25vw] sm:bottom-[25vh] sm:left-[20vw] md:bottom-[35vh] md:left-[24vw] lg:top-[48vh] lg:left-[10vw];
 }
-
-.bg-img {
-  background-image: url("../../assets/image/company/breadcrumb-bg-1.jpg");
+.breadcrumb-bg {
+  background-image: url("./assets/image/breadcrumb-bg/breadcrumb-bg.jpg");
+  background-size: cover;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 
-const CardUi = ({ data }) => {
+const CardUi = ({ data, darkMode }) => {
 
   return (
     <div className='flex flex-wrap justify-center p-5 '>
@@ -10,7 +10,7 @@ const CardUi = ({ data }) => {
         return (
           <div
             key={idx}
-            className='relative flex flex-col items-center w-96 h-[300px] pt-8 hover:shadow-lg transition-shadow duration-700 group'
+            className={`relative flex flex-col items-center w-96 h-[300px] pt-8 duration-500 group hover:shadow-md ${darkMode ? 'hover:shadow-gray-50' : 'hover:shadow-gray-500'}`}
           >
             <div
               className='absolute border rounded-full h-[150px] w-[150px] transition-transform duration-300 group-hover:scale-110 flex items-center justify-center'
