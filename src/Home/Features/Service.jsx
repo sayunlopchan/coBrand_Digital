@@ -8,6 +8,8 @@ import tab from '../../assets/image/company/optimize-shape.png'
 import tab1 from '../../assets/image/company/tab-5-bg-5.png'
 
 
+import { FaCheckCircle } from "react-icons/fa";
+
 
 
 const Services = ({ darkMode }) => {
@@ -46,30 +48,38 @@ const Services = ({ darkMode }) => {
         <div className='lg:grid lg:grid-cols-2 '>
           <div className='relative mx-auto py-10'>
             <img src={seoImg} alt="img" className='w-full md:w-[400px] lg:w-[400px]' />
-            <img src={tab} alt="img" className={`absolute h-[60px] w-[100px] top-10 shadow-md rounded-3xl ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
-            <img src={tab1} alt="img" className={`absolute h-[60px] w-[100px] bottom-10 right-0 shadow-md  ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
+            <img src={tab} alt="img" className={`absolute h-[80px] w-[140px] top-10 ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
+            <img src={tab1} alt="img" className={`absolute h-[100px] bottom-10 right-0 shadow-lg rounded-lg ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
 
           </div>
 
           <div className='space-y-5 flex flex-col items-center'>
             <span className='text-gray-500'>Best SMM results?</span>
-            <h1 className=' text-3xl lg:text-6xl font-bold'>
+            <h1 className=' text-3xl lg:text-6xl font-bold px-10'>
               Optimize your
               social media</h1>
-            <ul className='space-y-5'>
-              <li>
-                <h4>Know Your Audience & Goals</h4>
-                <p>Define their demographics, interests, and online behavior.</p>
-              </li>
-              <li>
-                <h4>Creative & Compelling Content</h4>
-                <p>Be Authentic & Consistent,Always Focus on value.</p>
-              </li>
-              <li>
-                <h4>Engage & Analyze</h4>
-                <p>Social media is a two-way street! Actively engage with your followers</p>
-              </li>
+            <ul className='font-bold flex gap-4'>
 
+              <div className='pt-3 space-y-10'>
+                <FaCheckCircle color='green' size={23} />
+                <FaCheckCircle color='green' size={23} />
+                <FaCheckCircle color='green' size={23} />
+              </div>
+
+              <div className='space-y-5'>
+                <li>
+                  <h4>Know Your Audience & Goals</h4>
+                  <p className={`text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Define their demographics, interests, and online behavior.</p>
+                </li>
+                <li>
+                  <h4>Creative & Compelling Content</h4>
+                  <p className={`text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Be Authentic & Consistent,Always Focus on value.</p>
+                </li>
+                <li>
+                  <h4>Engage & Analyze</h4>
+                  <p className={`text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Social media is a two-way street! Actively engage with your followers</p>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
