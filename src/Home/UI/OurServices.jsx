@@ -18,7 +18,7 @@ const OurServices = ({ darkMode }) => {
               </div>
               <div className='px-5 h-[240px]'>
                 <h1 className='text-lg font-bold text-center'>{item.name}</h1>
-                <p className={`text-md ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>{item.description}</p>
+                <p className={`text-sm md:text-md ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>{item.description}</p>
 
               </div>
               <div className='h-[40px]'>

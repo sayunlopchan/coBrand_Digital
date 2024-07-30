@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'bottom': '0 4px 6px rgba(0, 0, 0, 0.1)' // Customize this value as needed
+      },
       keyframes: {
         'scale-wave': {
           '0%': { transform: 'scale(1) translateY(0)' },
@@ -50,7 +53,7 @@ export default {
         },
       },
       animation: {
-        'scale-wave-slow': 'scale-wave 3s ease-in-out infinite',
+        'scale-wave-slow': 'scale-wave 10s ease-in-out infinite',
         'scale-wave-high-low': 'scale-wave-high-low 4s ease-in-out infinite',
         'rotate-scale-wave': 'rotate-scale-wave 4s ease-in-out infinite',
       },

@@ -4,7 +4,8 @@ import CardUi from '../../Components/CardUi'
 
 import data from '../../assets/data/courses_data'
 import seoImg from '../../assets/image/company/seo-5-bg-1.webp'
-import optimizeImg from '../../assets/image/company/optimize-shape.png'
+import tab from '../../assets/image/company/optimize-shape.png'
+import tab1 from '../../assets/image/company/tab-5-bg-5.png'
 
 
 
@@ -45,7 +46,8 @@ const Services = ({ darkMode }) => {
         <div className='lg:grid lg:grid-cols-2 '>
           <div className='relative mx-auto py-10'>
             <img src={seoImg} alt="img" className='w-full md:w-[400px] lg:w-[400px]' />
-            <img src={optimizeImg} alt="img" className={`absolute w-[100px] top-0 shadow-sm ${darkMode ? '' : ''}`} />
+            <img src={tab} alt="img" className={`absolute h-[60px] w-[100px] top-10 shadow-md rounded-3xl ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
+            <img src={tab1} alt="img" className={`absolute h-[60px] w-[100px] bottom-10 right-0 shadow-md  ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
 
           </div>
 
