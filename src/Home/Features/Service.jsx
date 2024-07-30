@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import img from '../../assets/image/company/breadcrumbBg.jpg'
 import CardUi from '../../Components/CardUi'
 
 import data from '../../assets/data/courses_data'
@@ -14,8 +13,8 @@ const Services = ({ darkMode }) => {
   return (
     <div className='relative'>
 
-      <div className='breadcrumb-bg absolute w-full h-[60vh] -top-[140px]'>
-        <div className='w-full h-[60vh] bg-black opacity-75'>
+      <div className='breadcrumb-bg absolute w-full h-500px -top-[140px]'>
+        <div className='w-full h-[400px] bg-black opacity-75'>
         </div>
       </div>
 
@@ -29,14 +28,15 @@ const Services = ({ darkMode }) => {
       </nav>
 
       <div className='flex items-center justify-center border-b-2 relative pb-96 '>
-        <div className={`absolute -top-8 w-[70vw] h-full rounded-3xl ${darkMode ? 'bg-gray-900 shadow-gray-500' : 'bg-white'} shadow-md pb-2 px-1 md:p-5`}>
-          <div className='flex justify-center items-center space-x-5 p-6 '>
+        <div className={`absolute -top-8 w-[80vw] px-10 rounded-3xl ${darkMode ? 'bg-gray-900 shadow-gray-500' : 'bg-white'} shadow-md`}>
+          <div className='flex items-center space-x-5 py-5 '>
             <h1 className='text-gray-500 text-sm md:text-md lg:text-lg'>WHAT</h1>
             <hr className='h-20 bg-gray-400 p-[1px]' />
-            <h1 className=' font-bold text-sm md:text-md lg:text-3xl'>Growth, not just reach with Cobrand Digital.</h1>
+            <h1 className='font-bold text-sm md:text-md lg:text-3xl'>Growth, not just reach with Cobrand Digital.</h1>
           </div>
-          <p className='text-gray-700 text-sm md:text-md lg:text-lg'>Dominate Nepal's digital market with targeted campaigns, engaging content, creative idea & Local SEO. We help businesses of all sizes climb the online mount everest and reach new heights. Ready to scale? Claim your peak in Nepal's digital landscape with our expert support. </p>
-
+          <div className='h-[260px] md:px-16'>
+            <p className='text-gray-700 text-[14px] sm:text-sm md:text-md lg:text-lg'>Dominate Nepal's digital market with targeted campaigns, engaging content, creative idea & Local SEO. We help businesses of all sizes climb the online mount everest and reach new heights. Ready to scale? Claim your peak in Nepal's digital landscape with our expert support. </p>
+          </div>
         </div>
       </div >
 
