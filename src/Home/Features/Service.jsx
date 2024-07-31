@@ -118,21 +118,19 @@ const Services = ({ darkMode }) => {
 
         <Lottie animationData={bg_animation} className='absolute' />
 
-        <div className='flex flex-col items-center gap-5 md:py-16'>
+        <div className='flex flex-col items-center gap-8 md:py-16'>
 
-          <h1 className='text-lg md:text-5xl font-bold text-center'>Grow your <span className='relative z-10'>business</span> today</h1>
+          <h1 className='relative text-lg md:text-5xl font-bold text-center  z-10'>Grow your business today </h1>
 
-          <p className='text-sm md:text-lg text-center '>Being one of the emerging digital marketing agency of Nepal, Our mission is to grow every businesses in digital landscape.</p>
+          <p className={`relative z-0 text-sm md:text-lg text-center px-10 font-semibold ${darkMode ? 'text-gray-400' : ''}`}>Being one of the emerging digital marketing agency of Nepal, Our mission is to grow every businesses in digital landscape.</p>
 
-          <button className='px-8 py-2 bg-blue-500 font-bold border-2 border-blue-500 rounded-lg text-white hover:text-black hover:bg-white relative z-10'>Get in Touch</button>
+          <button className='px-8 py-2 mt-10 bg-blue-500 font-bold border-2 border-blue-500 rounded-lg text-white hover:text-black hover:bg-white relative z-10'>Get in Touch</button>
         </div>
 
 
-        <div className='relative'>
-          <img src={womenImage} alt="women img" />
+        <div className='relative '>
+          <img src={womenImage} alt="women img" className='mx-auto' />
         </div>
-
-
       </div>
     </div >
   )

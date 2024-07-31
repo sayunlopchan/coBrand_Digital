@@ -6,16 +6,12 @@ import chart from '../../assets/animation/chart.json'
 import circleOrb from '../../assets/animation/circleOrb.json'
 
 
-import rocket from '../../assets/image/3d Vector icons/rocket.png'
-import influencer_marketing from '../../assets/image/icons/influencer-marketing.png'
-
-
 const HomeBanner = ({ darkMode }) => {
   return (
     <div className='grid lg:grid-rows-none lg:grid-cols-5 pt-5'>
-      <Lottie animationData={chart} className='absolute opacity-50' />
+      <Lottie animationData={chart} className='absolute' />
 
-      <section className='lg:col-span-3 flex flex-col justify-center items-center '>
+      <section className=' lg:col-span-3 flex flex-col justify-center items-center '>
         <div>
 
           <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
@@ -55,9 +51,6 @@ const HomeBanner = ({ darkMode }) => {
 
       <section className='relative lg:col-span-2 m-auto'>
         <Lottie animationData={circleOrb} />
-        {/* <img src={rocket} alt="" className='rocket' />
-        <img src={influencer_marketing} alt="" className='influencer-marketing' />
-        <img src={influencer_marketing} alt="" className='web-development' /> */}
       </section>
 
     </div>

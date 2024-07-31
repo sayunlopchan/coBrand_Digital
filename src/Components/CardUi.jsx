@@ -10,7 +10,7 @@ const CardUi = ({ data, darkMode }) => {
         return (
           <div
             key={idx}
-            className={`relative flex flex-col items-center w-96 h-[300px] pt-8 duration-500 group hover:shadow-md ${darkMode ? 'hover:shadow-gray-50' : 'hover:shadow-gray-500'}`}
+            className={`relative flex flex-col items-center w-96 h-[300px] pt-8 duration-300 group hover:shadow-md ${darkMode ? 'hover:shadow-gray-50' : 'hover:shadow-gray-500'}`}
           >
             <div
               className='absolute border rounded-full h-[150px] w-[150px] transition-transform duration-300 group-hover:scale-110 flex items-center justify-center'
@@ -19,8 +19,8 @@ const CardUi = ({ data, darkMode }) => {
               <img src={item.image} alt={item.name} className='w-24 transition-transform duration-300 group-hover:translate-y-[-20px]' />
             </div>
             <div className='flex flex-col justify-center items-center h-[100px] w-full absolute bottom-0 px-5'>
-              <span className='text-lg text-gray-800'>{item.name}</span>
-              <NavLink className='text-lg font-semibold hover:text-blue-500 transition duration-700'>{item.description}</NavLink>
+              <span className={`text-lg font-bold  ${darkMode ? 'text-gray-500' : 'text-gray-800'}`}>{item.name}</span>
+              <NavLink className='text-md hover:text-blue-500 transition '>{item.description}</NavLink>
             </div>
           </div>
         )
