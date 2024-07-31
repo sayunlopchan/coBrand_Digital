@@ -8,7 +8,19 @@ import tab from '../../assets/image/company/optimize-shape.png'
 import tab1 from '../../assets/image/company/tab-5-bg-5.png'
 
 
+
+import womenImage from '../../assets/image/company/cta-inner-bg-1.png'
+
+// animation
+import bg_animation from '../../assets/animation/bg-Animation - 1722427834753.json'
+import wavy_bg_animation from '../../assets/animation/wavy-bg-Animation - 1722427854867.json'
+
+
+
+
+
 import { FaCheckCircle } from "react-icons/fa";
+import Lottie from 'lottie-react'
 
 
 
@@ -48,17 +60,17 @@ const Services = ({ darkMode }) => {
         <div className='md:grid md:grid-cols-2 '>
           <div className='relative mx-auto py-10'>
             <img src={seoImg} alt="img" className='w-full md:w-[400px] lg:w-[400px]' />
-            <img src={tab} alt="img" className={`absolute h-[80px] w-[100px] md:w-[140px] top-10 ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
+            <img src={tab} alt="img" className={`absolute h-[60px] w-[80px] md:w-[110px] top-10 ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
             <img src={tab1} alt="img" className={`absolute h-[100px] bottom-10 right-0 shadow-lg rounded-lg ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
 
           </div>
 
-          <div>
+          <div className='flex flex-col items-center gap-5'>
+
             <div>
               <span className='text-gray-500 flex justify-center'>Best SMM results?</span>
               <h1 className=' text-3xl lg:text-6xl font-bold px-10'>
-                Optimize your
-                social media</h1>
+                Optimize your social media</h1>
             </div>
 
             <div className='space-y-5 p-2 font-bold text-sm md:text-md lg:text-lg '>
@@ -86,8 +98,9 @@ const Services = ({ darkMode }) => {
                   <p className={`text-[12px] md:text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Social media is a two-way street! Actively engage with your followers</p>
                 </li>
               </ul>
-
             </div>
+
+            <button className='p-3 border-2 border-blue-600 hover:bg-blue-600 hover:text-white duration-300 rounded-lg'>Get Your Social Media Optimized</button>
           </div>
         </div>
 
@@ -100,6 +113,27 @@ const Services = ({ darkMode }) => {
         <CardUi data={data} darkMode={darkMode} />
       </div>
 
+
+      <div className='lg:grid lg:grid-cols-2 p-10 relative '>
+
+        <Lottie animationData={bg_animation} className='absolute' />
+
+        <div className='flex flex-col items-center gap-5 md:py-16'>
+
+          <h1 className='text-lg md:text-5xl font-bold text-center'>Grow your <span className='relative z-10'>business</span> today</h1>
+
+          <p className='text-sm md:text-lg text-center '>Being one of the emerging digital marketing agency of Nepal, Our mission is to grow every businesses in digital landscape.</p>
+
+          <button className='px-8 py-2 bg-blue-500 font-bold border-2 border-blue-500 rounded-lg text-white hover:text-black hover:bg-white relative z-10'>Get in Touch</button>
+        </div>
+
+
+        <div className='relative'>
+          <img src={womenImage} alt="women img" />
+        </div>
+
+
+      </div>
     </div >
   )
 }
