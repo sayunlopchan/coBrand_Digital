@@ -114,7 +114,7 @@ const Services = ({ darkMode }) => {
       </div>
 
 
-      <div className='lg:grid lg:grid-cols-2 p-10 relative '>
+      <div className='lg:grid lg:grid-cols-2  relative '>
 
         <Lottie animationData={bg_animation} className='absolute' />
 
