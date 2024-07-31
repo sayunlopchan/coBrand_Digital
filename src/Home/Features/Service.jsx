@@ -45,7 +45,7 @@ const Services = ({ darkMode }) => {
 
       <div className='p-10'>
 
-        <div className='lg:grid lg:grid-cols-2 '>
+        <div className='md:grid md:grid-cols-2 '>
           <div className='relative mx-auto py-10'>
             <img src={seoImg} alt="img" className='w-full md:w-[400px] lg:w-[400px]' />
             <img src={tab} alt="img" className={`absolute h-[80px] w-[100px] md:w-[140px] top-10 ${darkMode ? 'shadow-gray-400' : 'shadow-gray-600 '}`} />
@@ -54,36 +54,36 @@ const Services = ({ darkMode }) => {
           </div>
 
           <div>
-            <div className=''>
+            <div>
               <span className='text-gray-500 flex justify-center'>Best SMM results?</span>
               <h1 className=' text-3xl lg:text-6xl font-bold px-10'>
                 Optimize your
                 social media</h1>
             </div>
 
-            <div className='space-y-5 p-4 font-bold'>
+            <div className='space-y-5 p-2 font-bold text-sm md:text-md lg:text-lg '>
 
-              <ul className='flex items-center gap-4'>
-                <FaCheckCircle color='green' size={23} />
-                <li>
+              <ul className='grid grid-cols-6 items-center'>
+                <FaCheckCircle color='green' size={24} className='mx-auto' />
+                <li className='col-span-5'>
                   <h4>Know Your Audience & Goals</h4>
-                  <p className={`text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Define their demographics, interests, and online behavior.</p>
+                  <p className={`text-[12px] md:text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Define their demographics, interests, and online behavior.</p>
                 </li>
               </ul>
 
-              <ul className='flex items-center gap-4'>
-                <FaCheckCircle color='green' size={23} />
-                <li>
+              <ul className='grid grid-cols-6 items-center '>
+                <FaCheckCircle color='green' size={24} className='mx-auto' />
+                <li className='col-span-5'>
                   <h4>Creative & Compelling Content</h4>
-                  <p className={`text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Be Authentic & Consistent,Always Focus on value.</p>
+                  <p className={`text-[12px] md:text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Be Authentic & Consistent,Always Focus on value.</p>
                 </li>
               </ul>
 
-              <ul className='flex items-center gap-4'>
-                <FaCheckCircle color='green' size={23} />
-                <li>
+              <ul className='grid grid-cols-6 items-center'>
+                <FaCheckCircle color='green' size={24} className='mx-auto' />
+                <li className='col-span-5'>
                   <h4>Engage & Analyze</h4>
-                  <p className={`text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-800'}`}>Social media is a two-way street! Actively engage with your followers</p>
+                  <p className={`text-[12px] md:text-sm font-semibold ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Social media is a two-way street! Actively engage with your followers</p>
                 </li>
               </ul>
 
