@@ -12,8 +12,7 @@ import tab1 from '../../assets/image/company/tab-5-bg-5.png'
 import womenImage from '../../assets/image/company/cta-inner-bg-1.png'
 
 // animation
-import bg_animation from '../../assets/animation/bg-Animation - 1722427834753.json'
-import wavy_bg_animation from '../../assets/animation/wavy-bg-Animation - 1722427854867.json'
+import bloby from '../../assets/animation/bloby.json'
 
 
 
@@ -116,11 +115,11 @@ const Services = ({ darkMode }) => {
 
       <div className='lg:grid lg:grid-cols-2  relative '>
 
-        <Lottie animationData={bg_animation} className='absolute' />
 
-        <div className='flex flex-col items-center gap-8 md:py-16'>
 
-          <h1 className='relative text-lg md:text-5xl font-bold text-center  z-10'>Grow your business today </h1>
+        <div className='flex flex-col justify-center items-center gap-4 md:py-16 px-10'>
+
+          <h1 className='relative text-2xl md:text-5xl font-bold text-center  z-10'>Grow your business today </h1>
 
           <p className={`relative z-0 text-sm md:text-lg text-center px-10 font-semibold ${darkMode ? 'text-gray-400' : ''}`}>Being one of the emerging digital marketing agency of Nepal, Our mission is to grow every businesses in digital landscape.</p>
 
@@ -129,7 +128,8 @@ const Services = ({ darkMode }) => {
 
 
         <div className='relative '>
-          <img src={womenImage} alt="women img" className='mx-auto' />
+          <img src={womenImage} alt="women img" className='relative mx-auto z-10 w-full' />
+          <Lottie animationData={bloby} className='absolute top-0 ' />
         </div>
       </div>
     </div >

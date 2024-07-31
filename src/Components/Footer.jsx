@@ -6,7 +6,7 @@ import Logo from '../assets/image/logo/cobrand-primary.png'
 
 const Footer = ({ darkMode }) => {
   return (
-    <div className={`${darkMode ? 'border-t-2' : 'bg-blue-500 text-white'}`}>
+    <div className={`${darkMode ? 'border-t-2 bg-gray-900' : 'bg-blue-500 text-white'} relative z-10 `}>
       <div className="grid grid-cols-1 grid-rows-3  md:grid-cols-3 md:grid-rows-none gap-7 px-16 pt-10 md:mb-32 items-center">
         <div>
           <img src={Logo} alt="" className=" h-16" />
