@@ -6,9 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        'bottom': '0 4px 6px rgba(0, 0, 0, 0.1)' // Customize this value as needed
+
+
+
+      // Custom screen sizes
+      screens: {
+        'very-sm-1xl': '320px',
+        'very-sm-2xl': '375px',
+        'very-sm-3xl': '425px',
       },
+
+      //custom animations
       keyframes: {
         'scale-wave': {
           '0%': { transform: 'scale(1) translateY(0)' },

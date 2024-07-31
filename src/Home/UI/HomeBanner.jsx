@@ -2,17 +2,24 @@ import Lottie from 'lottie-react';
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
+//lottie animation
 import chart from '../../assets/animation/chart.json'
 import circleOrb from '../../assets/animation/circleOrb.json'
 
+// icons
+import icon1 from '../../assets/image/icons/code.png'
+import icon2 from '../../assets/image/icons/ui.png'
+import icon3 from '../../assets/image/icons/web-design.png'
 
 const HomeBanner = ({ darkMode }) => {
   return (
     <div className='grid lg:grid-rows-none lg:grid-cols-5 pt-5'>
+
       <Lottie animationData={chart} className='absolute' />
 
+
       <section className=' lg:col-span-3 flex flex-col justify-center items-center '>
-        <div>
+        <div className='relative z-10'>
 
           <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
           <TypeAnimation
@@ -49,8 +56,14 @@ const HomeBanner = ({ darkMode }) => {
 
       </section>
 
-      <section className='relative lg:col-span-2 m-auto'>
+      <section className='relative lg:col-span-2 m-auto bg-emerald-600'>
         <Lottie animationData={circleOrb} />
+
+        <img src={icon1} alt="" width={40} className='absolute  top-[7vh] left-[17vw] very-sm-3xl:top-[17vh] very-sm-3xl:left-30 sm:top-[20vh] sm:left-[16vw] md:top-[20vh] md:left-[17vw] ' />
+
+        <img src={icon2} alt="" width={40} className='absolute bottom-[9vh] left-[14vw] very-sm-3xl:bottom-[10vh] very-sm-3xl:left-[18vw] sm:bottom-[26vh] md:bottom-[18vh] md:left-[15vw]' />
+
+        <img src={icon3} alt="" width={40} className='absolute top-[12vh] right-[10vw] very-sm-3xl:top-[18vh] very-sm-3xl:right-[16vw] sm:top-[28vh] md:top-[20vh] md:right-[16vw]' />
       </section>
 
     </div>
