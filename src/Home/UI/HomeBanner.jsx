@@ -56,14 +56,14 @@ const HomeBanner = ({ darkMode }) => {
 
       </section>
 
-      <section className='relative lg:col-span-2 m-auto bg-emerald-600'>
+      <section className='relative lg:col-span-2 mx-auto hidden lg:block '>
         <Lottie animationData={circleOrb} />
 
-        <img src={icon1} alt="" width={40} className='absolute  top-[7vh] left-[17vw] very-sm-3xl:top-[17vh] very-sm-3xl:left-30 sm:top-[20vh] sm:left-[16vw] md:top-[20vh] md:left-[17vw] ' />
+        <img src={icon1} alt="" width={40} className='absolute  top-28 left-24 animate-rotate-scale-wave-1' />
 
-        <img src={icon2} alt="" width={40} className='absolute bottom-[9vh] left-[14vw] very-sm-3xl:bottom-[10vh] very-sm-3xl:left-[18vw] sm:bottom-[26vh] md:bottom-[18vh] md:left-[15vw]' />
+        <img src={icon2} alt="" width={40} className='absolute bottom-32 left-32 animate-rotate-scale-wave-2' />
 
-        <img src={icon3} alt="" width={40} className='absolute top-[12vh] right-[10vw] very-sm-3xl:top-[18vh] very-sm-3xl:right-[16vw] sm:top-[28vh] md:top-[20vh] md:right-[16vw]' />
+        <img src={icon3} alt="" width={40} className='absolute top-32 right-14 animate-rotate-scale-wave-3' />
       </section>
 
     </div>
