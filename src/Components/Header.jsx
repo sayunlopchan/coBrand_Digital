@@ -8,7 +8,7 @@ import ThemeMode from './ThemeMode';
 
 const Header = ({ darkMode, setDarkMode }) => {
   return (
-    <div className={`flex justify-between items-center p-2 sticky top-0 z-50 ${darkMode ? 'bg-gray-900 shadow-sm shadow-gray-800' : 'shadow-md bg-white'}`}>
+    <div className={`flex justify-between items-center p-2 sticky top-0 z-50 ${darkMode ? 'bg-gray-900 shadow-sm shadow-gray-800' : 'shadow-md bg-white text-black'}`}>
 
       {/* Logo */}
       <NavLink to='/' className='w-[200px]'>
@@ -23,7 +23,6 @@ const Header = ({ darkMode, setDarkMode }) => {
       <nav className='space-x-4 hidden md:block'>
         <NavLink to='/' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Home</NavLink>
         <NavLink to='service' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Service</NavLink>
-        <NavLink to='courses' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Courses</NavLink>
         <NavLink to='about' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>About</NavLink>
         <NavLink to='contact' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Contact</NavLink>
       </nav>

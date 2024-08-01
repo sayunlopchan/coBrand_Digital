@@ -19,7 +19,7 @@ const AboutUs = ({ darkMode }) => {
   return (
     <div>
 
-      <h1 className='text-center font-bold text-lg md:text-4xl'>About us</h1>
+      <h1 className='text-center font-bold text-xl md:2xl pb-5 '>About us</h1>
 
       <div className='grid lg:grid-rows-none lg:grid-cols-5 '>
         <section className='lg:col-span-3 '>
