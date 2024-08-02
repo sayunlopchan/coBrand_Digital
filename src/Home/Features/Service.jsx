@@ -117,13 +117,14 @@ const Services = ({ darkMode }) => {
 
 
 
-        <div className='flex flex-col justify-center items-center gap-4 md:py-16 px-10'>
+        <div className='relative flex flex-col justify-center items-center gap-4 md:py-16 px-10'>
 
           <h1 className='relative text-2xl md:text-5xl font-bold text-center  z-10'>Grow your business today </h1>
 
           <p className={`relative z-0 text-sm md:text-lg text-center px-10 font-semibold ${darkMode ? 'text-gray-400' : ''}`}>Being one of the emerging digital marketing agency of Nepal, Our mission is to grow every businesses in digital landscape.</p>
 
           <button className='px-8 py-2 mt-10 bg-blue-500 font-bold border-2 border-blue-500 rounded-lg text-white hover:text-black hover:bg-white relative z-10'>Get in Touch</button>
+
         </div>
 
 

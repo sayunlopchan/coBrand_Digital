@@ -35,12 +35,12 @@ const Drawer = ({ darkMode }) => {
             Home
           </NavLink>
 
-          <NavLink to='service' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
-            Service
-          </NavLink>
-
           <NavLink to='about' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
             About us
+          </NavLink>
+
+          <NavLink to='service' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>
+            Service
           </NavLink>
 
           <NavLink to='contact' className='block hover:bg-gray-700 py-2 px-4 border-b duration-500'>

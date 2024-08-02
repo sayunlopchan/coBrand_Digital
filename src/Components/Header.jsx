@@ -18,10 +18,10 @@ const Header = ({ darkMode, setDarkMode }) => {
       </NavLink>
 
       {/* Nav */}
-      <nav className='space-x-4 hidden md:block font-semibold'>
+      <nav className='space-x-4 hidden md:block'>
         <NavLink to='/' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Home</NavLink>
-        <NavLink to='service' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Service</NavLink>
         <NavLink to='about' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>About</NavLink>
+        <NavLink to='service' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Service</NavLink>
         <NavLink to='contact' className={({ isActive }) => isActive ? 'text-blue-500' : ''}>Contact</NavLink>
       </nav>
 
