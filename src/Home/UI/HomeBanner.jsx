@@ -18,6 +18,7 @@ import socialIcon3 from '../../assets/image/socialmedia-icons/whatsapp.svg'
 import socialIcon4 from '../../assets/image/socialmedia-icons/viber.svg'
 
 import tele from '../../assets/image/contact-icons/tele.svg'
+import { NavLink } from 'react-router-dom';
 
 const HomeBanner = ({ darkMode }) => {
   return (
@@ -92,18 +93,18 @@ const HomeBanner = ({ darkMode }) => {
       <div className='mt-10 mb-24'>
         <h2 className='text-center font-bold text-xl md:2xl'>Get connected with us</h2>
         <div className='flex justify-center gap-6 p-4'>
-          <a href="/">
+          <NavLink to="#">
             <img src={socialIcon1} alt="facebook icon" width={40} className='cursor-pointer hover:-translate-y-2 hover:duration-200' />
-          </a>
-          <a href="">
+          </NavLink>
+          <NavLink to="#">
             <img src={socialIcon2} alt="facebook icon" width={40} className='cursor-pointer hover:-translate-y-2 hover:duration-200' />
-          </a>
-          <a href="">
+          </NavLink>
+          <NavLink to="#">
             <img src={socialIcon3} alt="facebook icon" width={40} className='cursor-pointer hover:-translate-y-2 hover:duration-200' />
-          </a>
-          <a href="">
+          </NavLink>
+          <NavLink to="#">
             <img src={socialIcon4} alt="facebook icon" width={40} className='cursor-pointer hover:-translate-y-2 hover:duration-200' />
-          </a>
+          </NavLink>
         </div>
       </div>
     </>

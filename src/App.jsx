@@ -7,17 +7,23 @@ import Service from './Home/Features/Service';
 import Contact from './Home/Features/Contact';
 import About from './Home/Features/About';
 
-
-
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  // Initialize darkMode from localStorage, defaulting to false if not found
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedDarkMode = localStorage.getItem('darkMode');
+    return savedDarkMode === 'true'; // localStorage stores values as strings
+  });
 
   useEffect(() => {
+    // Update the document class based on darkMode
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
+
+    // Save the darkMode state in localStorage
+    localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
 
   const router = createBrowserRouter([
@@ -34,7 +40,7 @@ const App = () => {
 
   return (
     <RouterProvider router={router} />
-  )
+  );
 }
 
-export default App
+export default App;

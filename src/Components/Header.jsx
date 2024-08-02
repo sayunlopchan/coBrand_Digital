@@ -5,17 +5,15 @@ import { NavLink } from 'react-router-dom'
 import Drawer from './Drawer';
 import ThemeMode from './ThemeMode';
 
-
 const Header = ({ darkMode, setDarkMode }) => {
   return (
     <div className={`flex justify-between items-center p-2 sticky top-0 z-50 ${darkMode ? 'bg-gray-900 shadow-sm shadow-gray-800' : 'shadow-md bg-white text-black'}`}>
-
       {/* Logo */}
       <NavLink to='/' className='w-[200px]'>
         {darkMode ?
-          <img src={darkLogo} alt='coBrand primary logo' />
+          <img src={darkLogo} alt='CoBrand secondary logo' />
           :
-          <img src={logo} alt='coBrand primary logo' />
+          <img src={logo} alt='CoBrand primary logo' />
         }
       </NavLink>
 
@@ -40,4 +38,4 @@ const Header = ({ darkMode, setDarkMode }) => {
   )
 }
 
-export default Header
+export default Header;
