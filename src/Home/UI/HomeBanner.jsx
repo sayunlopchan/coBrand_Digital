@@ -17,6 +17,7 @@ import socialIcon2 from '../../assets/image/socialmedia-icons/instagram.svg'
 import socialIcon3 from '../../assets/image/socialmedia-icons/whatsapp.svg'
 import socialIcon4 from '../../assets/image/socialmedia-icons/viber.svg'
 
+import tele from '../../assets/image/contact-icons/tele.svg'
 
 const HomeBanner = ({ darkMode }) => {
   return (
@@ -26,7 +27,8 @@ const HomeBanner = ({ darkMode }) => {
         <Lottie animationData={chart} className='absolute' />
 
 
-        <section className=' lg:col-span-3 flex flex-col justify-center items-center '>
+        <section className=' lg:col-span-3 flex flex-col justify-center gap-10 '>
+
           <div className='relative z-10'>
 
             <h1 className='text-5xl md:text-6xl lg:text-7xl font-bold   md:py-4'>Digital marketing</h1>
@@ -59,7 +61,19 @@ const HomeBanner = ({ darkMode }) => {
               Your Spark in the Digital Universe!
             </h2>
           </div>
-          <button className='py-2 px-4 border-2 border-blue-700 rounded-xl hover:scale-90 duration-300'>contact us</button>
+
+          <div className='flex gap-10'>
+            <div className='flex gap-5'>
+              <img src={tele} alt="telephone icon" />
+              <div>
+                <span className='text-sm text-gray-500'>Got Questions?</span>
+                <br />
+                <span>+977 9847032260</span>
+              </div>
+            </div>
+
+            <button className='py-2 px-4 border-2 border-blue-700 rounded-xl hover:scale-90 duration-300'>contact us</button>
+          </div>
 
 
         </section>
@@ -76,9 +90,9 @@ const HomeBanner = ({ darkMode }) => {
       </div>
 
       <div className='mt-10 mb-24'>
-        <h2 className='text-center font-bold text-xl md:2xl'>Get connected to us</h2>
+        <h2 className='text-center font-bold text-xl md:2xl'>Get connected with us</h2>
         <div className='flex justify-center gap-6 p-4'>
-          <a href="">
+          <a href="/">
             <img src={socialIcon1} alt="facebook icon" width={40} className='cursor-pointer hover:-translate-y-2 hover:duration-200' />
           </a>
           <a href="">
