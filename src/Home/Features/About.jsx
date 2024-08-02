@@ -57,20 +57,35 @@ const About = ({ darkMode }) => {
 
         <div className='flex gap-10 flex-wrap justify-center'>
           {team.map((person, idx) => {
-            return <div key={idx} className='text-center '>
-              <div className='w-[300px] bg-blue-400 rounded-full overflow-hidden flex justify-center'>
-                <img src={person.img} alt={person.name} />
+            return (
+              <div key={idx} className='text-center'>
+                <div className='w-[300px] bg-blue-400 rounded-full overflow-hidden flex justify-center'>
+                  <img src={person.img} alt={person.name} />
+                </div>
+                <h4 className='font-bold text-lg'>{person.name}</h4>
+                <p className='text-gray-500 text-md'>{person.about}</p>
+                <div className='space-x-1 text-[12px] text-gray-500'>
+                  {person.social.facebook && (
+                    <NavLink to={person.social.facebook} className='underline underline-offset-2 hover:text-blue-500'>
+                      Facebook
+                    </NavLink>
+                  )}
+                  {person.social.instagram && (
+                    <NavLink to={person.social.instagram} className='underline underline-offset-2 hover:text-blue-500'>
+                      Instagram
+                    </NavLink>
+                  )}
+                  {person.social.linkedin && (
+                    <NavLink to={person.social.linkedin} className='underline underline-offset-2 hover:text-blue-500'>
+                      Linkedin
+                    </NavLink>
+                  )}
+                </div>
               </div>
-              <h4 className='font-bold text-lg'>{person.name}</h4>
-              <p className='text-gray-500 text-md'>{person.about}</p>
-              <div className='space-x-1 text-[12px] text-gray-500'>
-                <NavLink className={'underline underline-offset-2 hover:text-blue-500'}>Facebook</NavLink>
-                <NavLink className={'underline underline-offset-2 hover:text-blue-500'}>Instagram</NavLink>
-                <NavLink className={'underline underline-offset-2 hover:text-blue-500'}>Linkedin</NavLink>
-              </div>
-            </div>
+            );
           })}
         </div>
+
       </div>
 
 
