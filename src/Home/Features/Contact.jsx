@@ -14,7 +14,7 @@ const Contact = ({ darkMode }) => {
   return (
     <div>
 
-      <div className='lg:grid lg:grid-cols-2 py-10 shadow-lg'>
+      <div className='lg:grid lg:grid-cols-2 py-10'>
         <div className='space-y-5 p-10 '>
           <h1 className='text-5xl font-bold'>Get In Touch</h1>
           <p className='text-gray-500 text-lg'>If you need help with digital marketing or have any question regrading our company or service, you can directly contact us or visit our office</p>

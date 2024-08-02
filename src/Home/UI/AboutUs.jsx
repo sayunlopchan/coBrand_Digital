@@ -2,7 +2,7 @@ import React from 'react'
 import company1 from '../../assets/image/company/company-1.jpg'
 import company2 from '../../assets/image/company/company-2.jpg'
 import company3 from '../../assets/image/company/company-3.jpg'
-import company4 from '../../assets/image/company/company-4.jpg'
+
 
 import secondary_logo from '../../assets/image/logo/cobrand-primary.png'
 import { NavLink, useNavigate } from 'react-router-dom'
@@ -21,7 +21,7 @@ const AboutUs = ({ darkMode }) => {
 
       <h1 className='text-center font-bold text-xl md:2xl pb-5 '>About us</h1>
 
-      <div className='grid lg:grid-rows-none lg:grid-cols-5 '>
+      <div className='lg:grid lg:grid-cols-5 '>
         <section className='lg:col-span-3 '>
           <div className='relative px-10 md:p-10'>
             <img src={company1} alt="company-1" className='w-full border-2 ' />
