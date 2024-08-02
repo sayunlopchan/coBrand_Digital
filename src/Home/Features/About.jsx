@@ -6,10 +6,6 @@ import secondary_logo from '../../assets/image/logo/cobrand-primary.png'
 
 import team from '../../assets/data/team_data'
 
-//social icons
-import fb from '../../assets/image/socialmedia-icons/facebook.svg'
-import insta from '../../assets/image/socialmedia-icons/instagram.svg'
-import linkedin from '../../assets/image/socialmedia-icons/linkedin.svg'
 
 
 const About = ({ darkMode }) => {
@@ -57,23 +53,30 @@ const About = ({ darkMode }) => {
       <div className='py-10'>
 
         <h1 className='text-center text-2xl font-bold m-10'>Meet our eam of experts</h1>
+
+
         <div className='flex gap-10 flex-wrap justify-center'>
           {team.map((person, idx) => {
             return <div key={idx} className='text-center '>
-              <div className='w-[300px] bg-blue-400 rounded-l-full rounded-b-full overflow-hidden flex justify-center'>
-                <img src={person.img} alt={person.name} className='w-[260px] ' />
-                <div className='space-y-3'>
-                  <img src={fb} alt="" className=' size-10' />
-                  <img src={insta} alt="" className=' size-10' />
-                  <img src={linkedin} alt="" className=' size-10' />
-                </div>
+              <div className='w-[300px] bg-blue-400 rounded-full overflow-hidden flex justify-center'>
+                <img src={person.img} alt={person.name} />
               </div>
               <h4 className='font-bold text-lg'>{person.name}</h4>
               <p className='text-gray-500 text-md'>{person.about}</p>
+              <div className='space-x-1 text-[12px] text-gray-500'>
+                <NavLink className={'underline underline-offset-2 hover:text-blue-500'}>Facebook</NavLink>
+                <NavLink className={'underline underline-offset-2 hover:text-blue-500'}>Instagram</NavLink>
+                <NavLink className={'underline underline-offset-2 hover:text-blue-500'}>Linkedin</NavLink>
+              </div>
             </div>
           })}
         </div>
       </div>
+
+
+
+
+
 
     </div >
   )

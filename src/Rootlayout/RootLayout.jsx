@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
+import ScrollToTop from '../Components/ScrollToTop'
 
 
 
@@ -9,7 +10,7 @@ import Footer from '../Components/Footer'
 const RootLayout = ({ darkMode, setDarkMode }) => {
   return (
     <div className={`min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
-
+      <ScrollToTop />
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <main>
