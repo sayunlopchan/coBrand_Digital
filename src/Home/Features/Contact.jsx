@@ -14,7 +14,7 @@ const Contact = ({ darkMode }) => {
   return (
     <div>
 
-      <div className='lg:grid lg:grid-cols-2 p-10 shadow-lg'>
+      <div className='lg:grid lg:grid-cols-2 py-10 shadow-lg'>
         <div className='space-y-5 p-10 '>
           <h1 className='text-5xl font-bold'>Get In Touch</h1>
           <p className='text-gray-500 text-lg'>If you need help with digital marketing or have any question regrading our company or service, you can directly contact us or visit our office</p>
@@ -22,7 +22,7 @@ const Contact = ({ darkMode }) => {
           <NavLink to='#' className={`flex justify-between p-4 ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>
             <div className='flex gap-4'>
               <img src={mail} alt="mail" />
-              <span className='text-sm md:text-md '>contact@cobrand.com.np</span>
+              <span className='text-sm md:text-md text-gray-400'>contact@cobrand.com.np</span>
             </div>
             <img src={arrow} alt="arrow" />
           </NavLink>
@@ -30,7 +30,7 @@ const Contact = ({ darkMode }) => {
           <NavLink to='#' className={`flex justify-between p-4 ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>
             <div href='' className='flex gap-4'>
               <img src={telephone} alt="" />
-              <span>+9779847032260</span>
+              <span className='text-sm text-gray-400'>+9779847032260</span>
             </div>
             <img src={arrow} alt="" />
           </NavLink>
@@ -38,7 +38,7 @@ const Contact = ({ darkMode }) => {
           <NavLink to='#' className={`flex justify-between p-4 ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>
             <div className='flex gap-4'>
               <img src={telephone} alt="" />
-              <span>+9779866578037</span>
+              <span className='text-sm text-gray-400'>+9779866578037</span>
             </div>
             <img src={arrow} alt="" />
           </NavLink>
