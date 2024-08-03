@@ -25,7 +25,7 @@ const HomeBanner = ({ darkMode }) => {
     <>
       <div className='lg:grid lg:grid-cols-5'>
 
-        <Lottie animationData={chart} className='absolute' />
+        <Lottie animationData={chart} className='absolute opacity-30' />
 
 
         <section className=' lg:col-span-3 flex flex-col justify-center gap-10 '>

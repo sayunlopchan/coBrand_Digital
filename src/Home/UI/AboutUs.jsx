@@ -31,8 +31,6 @@ const AboutUs = ({ darkMode }) => {
         </section>
 
         <section className='lg:col-span-2 '>
-          <img src={secondary_logo} alt="primary-logo" className='w-[400px] mx-auto' />
-
           <h2 className='text-lg font-bold underline underline-offset-8 py-2'>Who we are?</h2>
 
           <p className={`${darkMode ? 'text-gray-500' : ''}`}>

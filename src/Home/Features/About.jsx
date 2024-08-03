@@ -52,7 +52,7 @@ const About = ({ darkMode }) => {
 
       <div className='py-10'>
 
-        <h1 className='text-center text-2xl font-bold m-10'>Meet our eam of experts</h1>
+        <h1 className='text-center text-2xl lg:text-4xl font-bold m-10'>Meet Our Team Of <br />Experts</h1>
 
 
         <div className='flex gap-10 flex-wrap justify-center'>

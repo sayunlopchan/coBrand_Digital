@@ -1,6 +1,6 @@
 import service1 from '../services/webdesign.png'
-import service2 from '../services/socialMarketing.jpg'
-import service3 from '../services/socialMarketing.jpg'
+import service2 from '../services/socialMarketing.png'
+import service3 from '../services/socialMediamarketing.png'
 
 
 let service_data = [
