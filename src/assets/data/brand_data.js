@@ -26,24 +26,24 @@ let brand_data = [
   },
   {
     image: brand4,
-    name: 'red sun hotel logo'
+    name: 'Redsun hotel logo'
   },
   {
     image: brand5,
-    name: 'sun star hotel logo'
+    name: 'Sun star hotel logo'
   },
   {
     image: brand6,
-    name: 'new krish logo'
+    name: 'New krish logo'
   },
   {
     image: brand7,
     name: 'edu path logo'
   },
-  {
-    image: brand8,
-    name: 'abs logo'
-  },
+  // {
+  //   image: brand8,
+  //   name: 'abs logo'
+  // },
   {
     image: brand9,
     name: 'reti institute pvt ltd logo'

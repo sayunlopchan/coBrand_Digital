@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const CardUi = ({ data, darkMode }) => {
 
+
   return (
     <div className='flex flex-wrap justify-center p-5 '>
       {data.map((item, idx) => {
@@ -25,7 +26,7 @@ const CardUi = ({ data, darkMode }) => {
           </div>
         )
       })}
-    </div>
+    </div >
 
   )
 }

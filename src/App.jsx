@@ -33,6 +33,10 @@ const App = () => {
         { path: 'service', element: <Service darkMode={darkMode} /> },
         { path: 'about', element: <About darkMode={darkMode} /> },
         { path: 'contact', element: <Contact darkMode={darkMode} /> },
+
+
+
+
       ],
     },
     { path: '*', element: <PageNotFound darkMode={darkMode} /> }

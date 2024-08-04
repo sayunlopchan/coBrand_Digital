@@ -7,7 +7,9 @@ export default {
   ],
   theme: {
     extend: {
-
+      backgroundImage: {
+        'gradient-text': 'linear-gradient(to right,blue, purple)',
+      },
       //custom animations
       keyframes: {
         'rotate-scale-wave-1': {
@@ -73,5 +75,13 @@ export default {
   },
   plugins: [
     require('daisyui'),
+    function ({ addUtilities }) {
+      addUtilities({
+        '.bg-clip-text': {
+          'background-clip': 'text',
+          'color': 'transparent',
+        },
+      });
+    },
   ],
 }

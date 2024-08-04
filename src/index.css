@@ -13,3 +13,21 @@
   background-image: url("./assets/image/breadcrumb-bg/breadcrumb-bg.jpg");
   background-size: cover;
 }
+
+.web-design-development-bg {
+  background-image: url("./assets/image/shapes/cta-inner-bg-1.png");
+  background-size: cover;
+}
+
+@keyframes rotateDayNight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-rotate {
+  animation: rotateDayNight 0.5s ease-in-out;
+}
