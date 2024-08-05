@@ -45,7 +45,7 @@ const RootLayout = ({ darkMode, setDarkMode }) => {
       <main className="relative">
         <Outlet context={{ darkMode, setDarkMode }} />
 
-        <div className="sticky bottom-4 px-4 hidden lg:block">
+        <div className="fixed z-50 bottom-5 px-8  hidden lg:block">
           <ThemeModeBottom darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
         <Footer darkMode={darkMode} />

@@ -47,7 +47,7 @@ const StaticHeader = ({ darkMode, setDarkMode }) => {
         </NavLink>
 
         {/* btn */}
-        <button className="font-bold text-white text-lg px-14 py-2 rounded-lg bg-blue-400 hover:bg-purple-500">
+        <button className="font-bold text-white text-lg px-10 py-2 rounded-full bg-blue-400 hover:bg-purple-500 duration-150">
           Message
         </button>
       </nav>
