@@ -42,8 +42,6 @@ const Header = ({ darkMode, setDarkMode }) => {
 
       {/* Drawer */}
       <div className='md:hidden'>
-
-        {/* toggleBtn */}
         <Drawer darkMode={darkMode} />
       </div>
     </div>

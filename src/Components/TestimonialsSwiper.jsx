@@ -1,37 +1,33 @@
-import React from 'react';
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-
-
-
-
-
-const SwiperUi2 = ({ data }) => {
+const TestimonialSwiper = ({ data }) => {
   return (
-    <div className='my-10'>
-      <h1 className='text-center py-5 text-lg font-bold md:text-2xl'>Testimonials</h1>
-
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30} // Optional: Adds space between slides
-      >
+    <div className="my-10">
+      <Swiper slidesPerView={1} spaceBetween={30}>
         {data.map((item, idx) => (
-          <SwiperSlide key={idx} className='flex justify-center items-center py-10'>
-            <p>{item.review}</p>
-            <img src={item.img} alt={item.name} />
-            <h1>{item.name}</h1>
+          <SwiperSlide key={idx} className="flex flex-col">
+            <div className="grid grid-rows-5 h-[250px]">
+              <p className="row-span-3">{item.review}</p>
+
+              <div>
+                <img src={item.img} alt={item.name} />
+                <h1>
+                  <strong>{item.name}</strong>
+                </h1>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
-
       </Swiper>
-    </div >
+    </div>
   );
 };
 
-export default SwiperUi2;
+export default TestimonialSwiper;

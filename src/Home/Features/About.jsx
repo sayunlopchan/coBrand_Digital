@@ -5,12 +5,15 @@ import mission from '../../assets/image/company/mission.jpg'
 import secondary_logo from '../../assets/image/logo/cobrand-primary.png'
 
 import team from '../../assets/data/team_data'
+import StaticHeader from '../../Components/StaticHeader'
 
 
 
-const About = ({ darkMode }) => {
+
+const About = () => {
   return (
-    <div>
+    <div className='px-10'>
+      <StaticHeader />
       <div className='lg:grid lg:grid-cols-2 p-10'>
 
         <div>
