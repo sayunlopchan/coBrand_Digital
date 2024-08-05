@@ -10,16 +10,16 @@ import Testimonials from "./UI/Testimonials";
 
 import MoreDetails from "./UI/MoreDetails";
 
-const HomePage = () => {
+const HomePage = ({ darkMode }) => {
   return (
     <div className="px-10">
-      <HomeBanner />
-      <AboutUs />
-      <OurServices />
-      <SwiperUi data={data} />
-      <MoreDetails />
-      <Testimonials />
-      <GoogleReviews />
+      <HomeBanner darkMode={darkMode} />
+      <AboutUs darkMode={darkMode} />
+      <OurServices darkMode={darkMode} />
+      <SwiperUi data={data} darkMode={darkMode} />
+      <MoreDetails darkMode={darkMode} />
+      {/* <Testimonials darkMode={darkMode} /> */}
+      <GoogleReviews darkMode={darkMode} />
     </div>
   );
 };

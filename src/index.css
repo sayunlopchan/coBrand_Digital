@@ -33,13 +33,13 @@
 }
 
 .gradient-Text {
-  @apply bg-gradient-text text-lg bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-lg bg-clip-text text-transparent;
 }
 
 .blobImg {
   background-image: url("./assets//image//company/choose-2.jpg");
   width: 400px;
-  height: 400px;
+  height: 490px;
   border-radius: 100px 200px 120px 200px;
   background-size: cover;
   background-position: center center;

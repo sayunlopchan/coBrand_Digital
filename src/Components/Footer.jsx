@@ -1,18 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from '../assets/image/logo/cobrand-primary.png'
-
-
+import Logo from "../assets/image/logo/cobrand-primary.png";
 
 const Footer = ({ darkMode }) => {
   return (
-    <div className={`${darkMode ? 'border-t-2 bg-gray-900' : ' bg-gray-200'} relative z-10 `}>
+    <div
+      className={`${
+        darkMode ? "border-t bg-gray-900" : " bg-gray-200"
+      } relative z-10 `}
+    >
       <div className="grid grid-cols-1 grid-rows-3  md:grid-cols-3 md:grid-rows-none gap-7 px-16 pt-10 md:mb-32 items-center">
         <div>
           <img src={Logo} alt="" className=" h-16" />
           <p className="text-md">
-            <strong>Cobrand Digital</strong> is the leading firm providing various digital
-            marketing services in Nepal to enhance businesses online presence.
+            <strong>Cobrand Digital</strong> is the leading firm providing
+            various digital marketing services in Nepal to enhance businesses
+            online presence.
           </p>
           <button>Connect With us</button>
         </div>
@@ -62,7 +65,7 @@ const Footer = ({ darkMode }) => {
         </div>
       </div>
       <div className="flex justify-center items-center p-4">
-        <p className="text-center bg-white text-gray-700 py-4 md:py-5 rounded-full text-sm md:text-md w-full">
+        <p className="text-center bg-white text-gray-700 py-3 md:py-4 rounded-full text-sm md:text-md w-[90%]">
           © 2024{" "}
           <span className="font-semibold text-blue-500">
             Cobrand Digital Pvt. Ltd.{" "}

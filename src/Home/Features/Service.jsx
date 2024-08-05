@@ -16,11 +16,11 @@ import { FaCheckCircle } from "react-icons/fa";
 import Lottie from "lottie-react";
 import StaticHeader from "../../Components/StaticHeader";
 
-const Services = ({ darkMode, setDarkMode }) => {
+const Services = ({ darkMode }) => {
   return (
     <div className="relative pt-20">
       <div className="absolute top-0 w-full z-10 px-10">
-        <StaticHeader />
+        <StaticHeader darkMode={darkMode} />
       </div>
       <div className="breadcrumb-bg absolute w-full h-500px -top-[140px]">
         <div className="w-full h-[400px] bg-black opacity-75"></div>
@@ -37,11 +37,11 @@ const Services = ({ darkMode, setDarkMode }) => {
         </div>
       </nav>
 
-      <div className="flex items-center justify-center border-b-2 relative pb-96 ">
+      <div className="flex items-center justify-center relative pb-96  ">
         <div
-          className={`absolute -top-8 w-[80vw] px-10 rounded-3xl ${
-            darkMode ? "bg-gray-900 shadow-gray-500" : "bg-white"
-          } shadow-md`}
+          className={`absolute -top-20 w-[80vw] px-10 rounded-3xl ${
+            darkMode ? "bg-gray-900 shadow-gray-800" : "bg-white"
+          } shadow-sm`}
         >
           <div className="flex items-center space-x-5 py-5 ">
             <h1 className="text-gray-500 text-sm md:text-md lg:text-lg">

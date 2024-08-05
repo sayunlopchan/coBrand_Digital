@@ -12,7 +12,7 @@ const Contact = ({ darkMode }) => {
   return (
     <div>
       <div className="px-10">
-        <StaticHeader />
+        <StaticHeader darkMode={darkMode} />
       </div>
       <div className="lg:grid lg:grid-cols-2 py-10">
         <div className="space-y-5 p-10 ">

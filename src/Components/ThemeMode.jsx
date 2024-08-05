@@ -20,7 +20,7 @@ const ThemeMode = ({ darkMode, setDarkMode }) => {
           }`}
         >
           {darkMode ? (
-            <IoIosMoon color="white" size={20} className="mx-auto mt-[2px]" />
+            <IoIosMoon color="white" size={20} className=" mx-auto mt-[2px]" />
           ) : (
             <IoSunny color="orange" size={20} className="mx-auto mt-[2px]" />
           )}

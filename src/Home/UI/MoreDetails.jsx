@@ -6,6 +6,11 @@ import Icon3 from "../../assets/image/shapes/Icon3";
 import laptopboy from "../../assets/image/company/optimize-bg-2.webp";
 import icon1 from "../../assets/image/company/optimize-shape-2.png";
 import icon2 from "../../assets/image/company/optimize-shape.png";
+import Counter from "../../Components/Counter";
+
+import overlay1 from "../../assets/image/shapes/counter-shape-4-4.png";
+import overlay2 from "../../assets/image/shapes/counter-shape-4-3.png";
+import Medal from "../../assets/image/icons/medal";
 
 const MoreDetails = ({ darkMode }) => {
   const gridRef = useRef(null);
@@ -41,6 +46,7 @@ const MoreDetails = ({ darkMode }) => {
 
   return (
     <div className="pt-10 space-y-28">
+      {/* lady */}
       <div className="lg:grid lg:grid-cols-6 place-items-center justify-items-center">
         <div className="col-span-3 ">
           <div className="blobImg mx-auto"></div>
@@ -120,6 +126,7 @@ const MoreDetails = ({ darkMode }) => {
         </div>
       </div>
 
+      {/* man */}
       <div ref={gridRef} className="lg:grid grid-cols-2 p-10">
         <div className="mt-10 space-y-5">
           <span className="gradient-Text font-semibold">
@@ -139,16 +146,55 @@ const MoreDetails = ({ darkMode }) => {
           <img
             ref={icon1Ref}
             src={icon1}
-            alt=""
-            className="absolute top-44 transition-transform duration-500"
+            alt="hover icon"
+            className="absolute top-44 transition-transform duration-500 w-[100px] md:w-[200px]"
           />
           <img
             ref={icon2Ref}
             src={icon2}
-            alt=""
-            className="absolute top-24 right-0 shadow-2xl w-[100px] transition-transform duration-500"
+            alt="hover icon"
+            className="absolute top-24 right-0 shadow-2xl w-[80px] md:w-[100px] transition-transform duration-500"
           />
           <img src={laptopboy} alt="" className="mx-auto" />
+        </div>
+      </div>
+
+      {/* counter */}
+      <div>
+        <div className="relative flex justify-center py-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 overflow-hidden lg:w-[70vw] mx-auto px-2 rounded-2xl">
+          <img
+            src={overlay1}
+            alt="overlays"
+            className="absolute inset-0 object-cover mix-blend-overlay"
+          />
+          <img
+            src={overlay2}
+            alt="overlays"
+            className="absolute bg-blend-overlay  indent-0 top-0 right-0"
+          />
+          <div className="relative flex lg:gap-10 mx-auto z-10">
+            <div className="flex gap-3 items-center">
+              <Medal />
+              <div>
+                <Counter number={200} />
+                <p className="text-sm">Successful Projects</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-center">
+              <Medal />
+              <div>
+                <Counter number={50} />
+                <p className="text-sm">Happy Customers</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-center">
+              <Medal />
+              <div>
+                <Counter number={8} />
+                <p className="text-sm">Team Members</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
