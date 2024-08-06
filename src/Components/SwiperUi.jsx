@@ -16,8 +16,8 @@ const SwiperUi = ({ data }) => {
         modules={[Navigation, Autoplay]}
         slidesPerView={3}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
         }}
         spaceBetween={30}
         loop={true}
@@ -36,10 +36,9 @@ const SwiperUi = ({ data }) => {
             </div>
           </SwiperSlide>
         ))}
-
         {/* Custom navigation buttons */}
-        <div className=" custom-prev"></div>
-        <div className=" custom-next"></div>
+        <div className="hidden lg:block custom-prev"></div>
+        <div className="hidden lg:block custom-next"></div>
       </Swiper>
     </div>
   );
