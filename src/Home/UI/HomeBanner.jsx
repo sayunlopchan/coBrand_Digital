@@ -22,7 +22,7 @@ import StaticHeader from "../../Components/StaticHeader";
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <div className="mb-[100px]">
+    <div className="h-[100vh] lg:mb-[100px]">
       <StaticHeader darkMode={darkMode} />
       <div className="lg:grid lg:grid-cols-5">
         <Lottie animationData={chart} className="absolute opacity-30" />
