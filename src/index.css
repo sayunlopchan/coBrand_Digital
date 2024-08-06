@@ -38,7 +38,7 @@
 
 .blobImg {
   background-image: url("./assets//image//company/choose-2.jpg");
-  width: 400px;
+  /* width: 400px; */
   height: 490px;
   border-radius: 100px 200px 120px 200px;
   background-size: cover;

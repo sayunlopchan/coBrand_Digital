@@ -51,7 +51,7 @@ const MoreDetails = ({ darkMode }) => {
       {/* lady */}
       <div className="lg:grid lg:grid-cols-6 place-items-center justify-items-center">
         <div className="col-span-3 ">
-          <div className="blobImg mx-auto"></div>
+          <div className="blobImg mx-auto w-[200px] md:w-[400px]"></div>
         </div>
 
         <div className="col-span-3">
