@@ -24,7 +24,7 @@ const HomeBanner = ({ darkMode }) => {
   return (
     <div className="h-[100vh] lg:mb-[100px]">
       <StaticHeader darkMode={darkMode} />
-      <div className="lg:grid lg:grid-cols-5">
+      <div className="mt-16 lg:mt-10 lg:grid lg:grid-cols-5">
         <Lottie animationData={chart} className="absolute opacity-30" />
 
         <section className=" lg:col-span-3 flex flex-col justify-center gap-10 ">
