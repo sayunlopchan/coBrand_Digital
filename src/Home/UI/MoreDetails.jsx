@@ -45,7 +45,7 @@ const MoreDetails = ({ darkMode }) => {
   }, []);
 
   return (
-    <div className="pt-10 space-y-28">
+    <div className=" my-[100px] py-10 space-y-28 ">
       {/* lady */}
       <div className="lg:grid lg:grid-cols-6 place-items-center justify-items-center">
         <div className="col-span-3 ">
@@ -127,7 +127,7 @@ const MoreDetails = ({ darkMode }) => {
       </div>
 
       {/* man */}
-      <div ref={gridRef} className="lg:grid grid-cols-2 p-10">
+      <div ref={gridRef} className="lg:grid grid-cols-2 py-[100px]">
         <div className="mt-10 space-y-5">
           <span className="gradient-Text font-semibold">
             Looking for best results?

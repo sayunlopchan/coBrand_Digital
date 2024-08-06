@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 //lottie animation
@@ -23,7 +22,7 @@ import StaticHeader from "../../Components/StaticHeader";
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <>
+    <div className="mb-[100px]">
       <StaticHeader darkMode={darkMode} />
       <div className="lg:grid lg:grid-cols-5">
         <Lottie animationData={chart} className="absolute opacity-30" />
@@ -103,7 +102,7 @@ const HomeBanner = ({ darkMode }) => {
         </section>
       </div>
 
-      <div className="mt-10 mb-24">
+      <div className="mt-10">
         <h2 className="text-center font-bold text-xl md:2xl">
           Get connected with us
         </h2>
@@ -142,7 +141,7 @@ const HomeBanner = ({ darkMode }) => {
           </NavLink>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

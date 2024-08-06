@@ -4,6 +4,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import ScrollToTop from "../Components/ScrollToTop";
 import ThemeModeBottom from "../Components/ThemeModeBottom";
+import BackToTopBtn from "../Components/backToTopBtn";
 
 const RootLayout = ({ darkMode, setDarkMode }) => {
   const [showHeader, setShowHeader] = React.useState(false);
@@ -47,6 +48,9 @@ const RootLayout = ({ darkMode, setDarkMode }) => {
 
         <div className="fixed z-50 bottom-5 px-8  hidden lg:block">
           <ThemeModeBottom darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
+        <div className="fixed z-50 bg-red-300 ">
+          <BackToTopBtn />
         </div>
         <Footer darkMode={darkMode} />
       </main>

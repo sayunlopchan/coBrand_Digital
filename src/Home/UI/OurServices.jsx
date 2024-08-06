@@ -3,7 +3,7 @@ import data from "../../assets/data/service_data";
 
 const OurServices = ({ darkMode }) => {
   return (
-    <section className="">
+    <section className="mb-[100px]">
       <div className="text-center">
         <span className="gradient-Text font-bold text-center ">
           Why Choose Us

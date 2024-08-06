@@ -2,13 +2,14 @@ import React from "react";
 import logo from "../assets/image/logo/cobrand-primary.png";
 import darkLogo from "../assets/image/logo/cobrand-secondary.png";
 import { NavLink } from "react-router-dom";
-import Drawer from "./Drawer";
+
 import ThemeMode from "./ThemeMode";
+import RootMyDrawer from "./MyDrawer/RootMyDrawer";
 
 const Header = ({ darkMode, setDarkMode }) => {
   return (
     <div
-      className={`flex justify-between items-center p-2 ${
+      className={`flex justify-between items-center py-1 px-10 ${
         darkMode
           ? "bg-gray-900 shadow-sm shadow-gray-800"
           : "shadow-md bg-white text-black"
@@ -27,7 +28,7 @@ const Header = ({ darkMode, setDarkMode }) => {
       <nav className="space-x-4 hidden md:block">
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "text-blue-500" : "")}
+          className={`({ isActive }) => (isActive ? "text-blue-500" : "")`}
         >
           Home
         </NavLink>
@@ -65,7 +66,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
       {/* Drawer */}
       <div className="md:hidden">
-        <Drawer darkMode={darkMode} />
+        <RootMyDrawer darkMode={darkMode} />
       </div>
     </div>
   );

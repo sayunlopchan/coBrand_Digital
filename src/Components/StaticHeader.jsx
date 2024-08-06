@@ -4,8 +4,8 @@ import logo from "../assets/image/logo/cobrand-primary.png";
 import darkLogo from "../assets/image/logo/cobrand-secondary.png";
 
 import { NavLink } from "react-router-dom";
-import Drawer from "./Drawer";
 import ThemeMode from "./ThemeMode";
+import StaticMyDrawer from "./MyDrawer/StaticMyDrawer";
 
 const StaticHeader = ({ darkMode, setDarkMode }) => {
   return (
@@ -56,7 +56,7 @@ const StaticHeader = ({ darkMode, setDarkMode }) => {
       </span>
       {/* Drawer */}
       <div className="md:hidden">
-        <Drawer darkMode={darkMode} />
+        <StaticMyDrawer darkMode={darkMode} />
       </div>
     </div>
   );

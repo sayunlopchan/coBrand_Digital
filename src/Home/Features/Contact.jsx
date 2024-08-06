@@ -10,11 +10,11 @@ import StaticHeader from "../../Components/StaticHeader";
 
 const Contact = ({ darkMode }) => {
   return (
-    <div>
+    <div className={`${darkMode ? "" : "contact-bg"}`}>
       <div className="px-10">
         <StaticHeader darkMode={darkMode} />
       </div>
-      <div className="lg:grid lg:grid-cols-2 py-10">
+      <div className="lg:grid lg:grid-cols-2 p-10">
         <div className="space-y-5 p-10 ">
           <h1 className="text-5xl font-bold">Get In Touch</h1>
           <p className="text-gray-500 text-lg">
@@ -26,7 +26,7 @@ const Contact = ({ darkMode }) => {
           <NavLink
             to="#"
             className={`flex justify-between p-4 ${
-              darkMode ? "bg-gray-700" : "bg-gray-200"
+              darkMode ? "bg-gray-700" : "bg-gray-50"
             }`}
           >
             <div className="flex gap-4">
@@ -41,7 +41,7 @@ const Contact = ({ darkMode }) => {
           <NavLink
             to="#"
             className={`flex justify-between p-4 ${
-              darkMode ? "bg-gray-700" : "bg-gray-200"
+              darkMode ? "bg-gray-700" : "bg-gray-50"
             }`}
           >
             <div href="" className="flex gap-4">
@@ -54,7 +54,7 @@ const Contact = ({ darkMode }) => {
           <NavLink
             to="#"
             className={`flex justify-between p-4 ${
-              darkMode ? "bg-gray-700" : "bg-gray-200"
+              darkMode ? "bg-gray-700" : "bg-gray-50"
             }`}
           >
             <div className="flex gap-4">
@@ -67,7 +67,7 @@ const Contact = ({ darkMode }) => {
 
         <form
           action=""
-          className={`space-y-2 p-10 rounded-lg shadow-lg ${
+          className={`space-y-2 p-10 rounded-lg mx-10 bg-white ${
             darkMode ? " shadow-gray-800 text-black bg-gray-800" : ""
           }`}
         >
@@ -107,7 +107,7 @@ const Contact = ({ darkMode }) => {
               className="bg-white rounded-md border-2 w-full min-h-[200px] max-h-[200px] p-3"
             ></textarea>
           </div>
-          <div className="flex justify-center">
+          <div className="">
             <button className=" px-10 py-4 rounded-lg bg-blue-500 text-white font-bold hover:scale-90">
               Send Messgae
             </button>

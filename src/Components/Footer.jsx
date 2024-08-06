@@ -6,7 +6,7 @@ const Footer = ({ darkMode }) => {
   return (
     <div
       className={`${
-        darkMode ? "border-t bg-gray-900" : " bg-gray-200"
+        darkMode ? "border-t bg-gray-900" : " bg-[#F2F2F2]"
       } relative z-10 `}
     >
       <div className="grid grid-cols-1 grid-rows-3  md:grid-cols-3 md:grid-rows-none gap-7 px-16 pt-10 md:mb-32 items-center">
@@ -17,7 +17,7 @@ const Footer = ({ darkMode }) => {
             various digital marketing services in Nepal to enhance businesses
             online presence.
           </p>
-          <button>Connect With us</button>
+          <button className="bg-blue-400 py-4">Connect With us</button>
         </div>
         <div>
           <h1 className="text-lg md:text-2xl font-bold ">Services</h1>

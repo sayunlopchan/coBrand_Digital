@@ -66,3 +66,102 @@
 .translate-down {
   transform: translateY(20px);
 }
+.hover-gradient {
+  @apply relative py-1 after:absolute after:h-[4px] after:w-0 after:bottom-0 after:left-0 after:bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 after:hover:w-[50px] after:hover:duration-700;
+}
+.hover-line {
+  @apply relative py-1 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 after:bg-black after:hover:w-[50px] after:hover:duration-700;
+}
+
+.contact-bg {
+  background-color: #e0edff;
+}
+
+/* custom arrow for swiper */
+
+/* Hide default Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  /* display: none; */
+}
+
+/* Ensure custom navigation buttons are visible and correctly positioned */
+.relative {
+  position: relative;
+}
+
+.custom-prev,
+.custom-next {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.custom-prev {
+  background-image: url("./assets/image/icons/left-arrow-svgrepo.svg");
+  left: 10px;
+  background-color: whitesmoke;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.custom-next {
+  background-image: url("./assets/image/icons/right-arrow-svgrepo.svg");
+  right: 10px;
+  background-color: whitesmoke;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* drawer css */
+/* Backdrop to cover the rest of the screen */
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100; /* Ensure it covers the drawer */
+}
+
+/* Drawer styling */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; /* Adjust the width as needed */
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 101; /* Ensure it is above the backdrop */
+}
+
+/* Show the drawer when it is open */
+.drawer.open {
+  transform: translateX(0);
+}
+
+/* Close button styling */
+.drawer-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Drawer content styling */
+.drawer-content {
+  padding: 20px;
+}
