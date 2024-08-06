@@ -45,7 +45,7 @@ const Counter = ({ number, duration = 1000 }) => {
 
   return (
     <div ref={ref}>
-      <h1 className="text-md lg:text-3xl font-bold text-white">
+      <h1 className="text-sm md:text-2xl lg:text-4xl font-bold text-white">
         {count} <strong>+</strong>
       </h1>
     </div>

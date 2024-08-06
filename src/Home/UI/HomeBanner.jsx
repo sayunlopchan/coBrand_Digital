@@ -22,9 +22,9 @@ import StaticHeader from "../../Components/StaticHeader";
 
 const HomeBanner = ({ darkMode }) => {
   return (
-    <div className="max-w-sm:h-[100vh] mb-[100px]">
+    <div className="mb-[100px]">
       <StaticHeader darkMode={darkMode} />
-      <div className="lg:grid lg:grid-cols-5">
+      <div className=" lg:grid lg:grid-cols-5">
         <Lottie animationData={chart} className="absolute opacity-30" />
 
         <section className=" lg:col-span-3 flex flex-col justify-center gap-10 ">
@@ -76,7 +76,7 @@ const HomeBanner = ({ darkMode }) => {
           </div>
         </section>
 
-        <section className="relative lg:col-span-2 mx-auto hidden lg:block ">
+        <div className="relative lg:col-span-2 mx-auto hidden lg:block ">
           <Lottie animationData={circleOrb} />
 
           <img
@@ -99,7 +99,7 @@ const HomeBanner = ({ darkMode }) => {
             width={40}
             className="absolute top-32 right-14 animate-rotate-scale-wave-3"
           />
-        </section>
+        </div>
       </div>
 
       <div className="mt-10">

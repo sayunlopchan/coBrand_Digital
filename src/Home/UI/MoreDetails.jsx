@@ -11,6 +11,8 @@ import Counter from "../../Components/Counter";
 import overlay1 from "../../assets/image/shapes/counter-shape-4-4.png";
 import overlay2 from "../../assets/image/shapes/counter-shape-4-3.png";
 import Medal from "../../assets/image/icons/medal";
+import Smile from "../../assets/image/icons/Smile";
+import People from "../../assets/image/icons/People";
 
 const MoreDetails = ({ darkMode }) => {
   const gridRef = useRef(null);
@@ -140,7 +142,33 @@ const MoreDetails = ({ darkMode }) => {
             unique ideas and content that relates with ever changing audience
             behavior.
           </p>
-          <div>{/* hbhv */}</div>
+
+          <div className="flex flex-col gap-10 text-sm text-gray-500">
+            <div>
+              <p>Social Media Marketing </p>
+              <progress
+                className="w-[390px] rounded-full h-3"
+                max={100}
+                value={90}
+              />
+            </div>
+            <div>
+              <p>Graphic Design </p>
+              <progress
+                className="w-[390px] rounded-full h-3"
+                max={100}
+                value={85}
+              />
+            </div>
+            <div>
+              <p> Web Development</p>
+              <progress
+                className="w-[390px] rounded-full h-3"
+                max={100}
+                value={80}
+              />
+            </div>
+          </div>
         </div>
         <div className="relative">
           <img
@@ -172,7 +200,8 @@ const MoreDetails = ({ darkMode }) => {
             alt="overlays"
             className="absolute bg-blend-overlay  indent-0 top-0 right-0"
           />
-          <div className="relative flex lg:gap-10 mx-auto z-10">
+
+          <div className="grid grid-cols-3 place-items-center lg:gap-16 mx-auto text-white w-full">
             <div className="flex gap-3 items-center">
               <Medal />
               <div>
@@ -180,15 +209,17 @@ const MoreDetails = ({ darkMode }) => {
                 <p className="text-sm">Successful Projects</p>
               </div>
             </div>
+
             <div className="flex gap-3 items-center">
-              <Medal />
+              <Smile />
               <div>
                 <Counter number={50} />
                 <p className="text-sm">Happy Customers</p>
               </div>
             </div>
+
             <div className="flex gap-3 items-center">
-              <Medal />
+              <People />
               <div>
                 <Counter number={8} />
                 <p className="text-sm">Team Members</p>
