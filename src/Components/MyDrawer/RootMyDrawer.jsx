@@ -1,8 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
+
+// images
 import logo from "../../assets/image/logo/cobrand-primary.png";
 import darkLogo from "../../assets/image/logo/cobrand-secondary.png";
+
+//darkMode btn
 import ThemeMode from "../ThemeMode";
+
+// react icon
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 
 // social media icons
 import socialIcon1 from "../../assets/image/socialmedia-icons/facebook.svg";
@@ -10,7 +18,6 @@ import socialIcon2 from "../../assets/image/socialmedia-icons/instagram.svg";
 import socialIcon3 from "../../assets/image/socialmedia-icons/whatsapp.svg";
 import socialIcon4 from "../../assets/image/socialmedia-icons/viber.svg";
 import socialIcon5 from "../../assets/image/socialmedia-icons/linkedin.svg";
-import { NavLink } from "react-router-dom";
 
 const RootMyDrawer = ({ darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +62,7 @@ const RootMyDrawer = ({ darkMode }) => {
 
       {/* Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 h-[100vh]"></div>
+        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-40 h-[100vh]"></div>
       )}
 
       {/* Drawer */}
@@ -132,20 +139,7 @@ const RootMyDrawer = ({ darkMode }) => {
           onClick={toggleDrawer}
           className="flex justify-center mt-10 text-2xl"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="h-10"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <IoClose size={40} />
         </div>
       </div>
     </div>

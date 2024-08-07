@@ -31,7 +31,7 @@ const RootLayout = ({ darkMode, setDarkMode }) => {
   return (
     <div
       className={`min-h-screen ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        darkMode ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
       <ScrollToTop />

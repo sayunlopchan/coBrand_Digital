@@ -1,14 +1,17 @@
+/* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+/* tailwind csss */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* apply to all */
 * {
   @apply m-0 p-0 box-border;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
+/* bg image for service */
 .breadcrumb-bg {
   background-image: url("./assets/image/breadcrumb-bg/breadcrumb-bg.jpg");
   background-size: cover;
@@ -38,24 +41,22 @@
 
 .blobImg {
   background-image: url("./assets//image//company/choose-2.jpg");
-  /* width: 400px; */
-  height: 490px;
-  border-radius: 100px 200px 120px 200px;
+  border-radius: 180px 150px 160px 170px;
   background-size: cover;
   background-position: center center;
   box-shadow: 0 5px 5px 5px rgba(13, 110, 0, 253, 0.1);
-  animation: animate 10s ease-in-out infinite;
+  animation: animate 5s ease-in-out infinite;
 }
 
 @keyframes animate {
   0% {
-    border-radius: 60% 40% 20% 70% / 60% 30% 70% 40%;
+    border-radius: 90% 40% 30% 70% / 60% 20% 70% 40%;
   }
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
   100% {
-    border-radius: 60% 40% 20% 70% / 60% 30% 70% 40%;
+    border-radius: 90% 40% 30% 70% / 60% 20% 70% 40%;
   }
 }
 
@@ -131,18 +132,6 @@
   z-index: 100; /* Ensure it covers the drawer */
 }
 
-/* drawer css */
-/* Backdrop to cover the rest of the screen */
-.drawer-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 100; /* Ensure it covers the drawer */
-}
-
 /* Drawer styling */
 .drawer {
   position: fixed;
@@ -176,4 +165,23 @@
 /* Drawer content styling */
 .drawer-content {
   padding: 20px;
+}
+
+/* Custom progress bar styles */
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.progress-purple::-moz-progress-bar {
+  background-color: #a855f7;
+}
+
+.progress-blue::-moz-progress-bar {
+  background-color: #3b82f6;
+}
+
+.progress-red::-moz-progress-bar {
+  background-color: #ef4444;
 }

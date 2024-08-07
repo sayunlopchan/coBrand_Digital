@@ -51,7 +51,8 @@ const MoreDetails = ({ darkMode }) => {
       {/* lady */}
       <div className="lg:grid lg:grid-cols-6 place-items-center justify-items-center">
         <div className="col-span-3 ">
-          <div className="blobImg mx-auto w-[200px] md:w-[400px]"></div>
+          {/* blob image  */}
+          <div className="blobImg mx-auto w-full h-[400px]  md:h-[500px] md:w-[500px]"></div>
         </div>
 
         <div className="col-span-3">
@@ -147,7 +148,7 @@ const MoreDetails = ({ darkMode }) => {
             <div>
               <p>Social Media Marketing </p>
               <progress
-                className="w-[390px] rounded-full h-3"
+                className="progress-purple w-full md:w-[390px] rounded-full h-3"
                 max={100}
                 value={90}
               />
@@ -155,7 +156,7 @@ const MoreDetails = ({ darkMode }) => {
             <div>
               <p>Graphic Design </p>
               <progress
-                className="w-[390px] rounded-full h-3"
+                className="progress-blue w-full md:w-[390px] rounded-full h-3"
                 max={100}
                 value={85}
               />
@@ -163,7 +164,7 @@ const MoreDetails = ({ darkMode }) => {
             <div>
               <p> Web Development</p>
               <progress
-                className="w-[390px] rounded-full h-3"
+                className="progress-red w-full md:w-[390px] rounded-full h-3"
                 max={100}
                 value={80}
               />
