@@ -47,7 +47,7 @@ const MoreDetails = ({ darkMode }) => {
   }, []);
 
   return (
-    <div className=" my-[100px] py-10 space-y-28 ">
+    <div className=" my-[100px] py-10  ">
       {/* lady */}
       <div className="lg:grid lg:grid-cols-6 place-items-center justify-items-center">
         <div className="col-span-3 ">
@@ -70,7 +70,9 @@ const MoreDetails = ({ darkMode }) => {
               <div className="flex gap-5">
                 <div className="relative">
                   <Icon1 />
-                  <p className="absolute top-2 left-3">01</p>
+                  <p className="absolute top-2 left-3 text-white font-bold">
+                    01
+                  </p>
                 </div>
                 <h2 className="font-bold text-lg">
                   Data & Information Collection
@@ -90,7 +92,9 @@ const MoreDetails = ({ darkMode }) => {
               <div className="flex gap-5">
                 <div className="relative">
                   <Icon2 />
-                  <p className="absolute top-2 left-3">02</p>
+                  <p className="absolute top-2 left-3 text-white font-bold">
+                    02
+                  </p>
                 </div>
                 <h2 className="font-bold text-lg">
                   Data & Information Collection
@@ -110,7 +114,9 @@ const MoreDetails = ({ darkMode }) => {
               <div className="flex gap-5">
                 <div className="relative">
                   <Icon3 />
-                  <p className="absolute top-2 left-3">03</p>
+                  <p className="absolute top-2 left-3 text-white font-bold">
+                    03
+                  </p>
                 </div>
                 <h2 className="font-bold text-lg">
                   Data & Information Collection
@@ -147,30 +153,46 @@ const MoreDetails = ({ darkMode }) => {
           <div className="flex flex-col gap-10 text-sm text-gray-500">
             <div>
               <p>Social Media Marketing </p>
-              <progress
-                className="progress-purple w-full md:w-[390px] rounded-full h-3"
-                max={100}
-                value={90}
-              />
+              <span className="relative">
+                <progress
+                  className="progress-purple w-full md:w-[390px] h-3"
+                  max={100}
+                  value={90}
+                />
+                <span className="bg-white p-1 rounded-full border-2 border-[#a855f7] absolute right-9 -top-2 ">
+                  90
+                </span>
+              </span>
             </div>
             <div>
               <p>Graphic Design </p>
-              <progress
-                className="progress-blue w-full md:w-[390px] rounded-full h-3"
-                max={100}
-                value={85}
-              />
+              <span className="relative">
+                <progress
+                  className="progress-blue w-full md:w-[390px] h-3"
+                  max={100}
+                  value={85}
+                />
+                <span className="bg-white p-1 rounded-full border-2 border-[#3b82f6] absolute right-14 -top-2 ">
+                  90
+                </span>
+              </span>
             </div>
             <div>
               <p> Web Development</p>
-              <progress
-                className="progress-red w-full md:w-[390px] rounded-full h-3"
-                max={100}
-                value={80}
-              />
+              <span className="relative">
+                <progress
+                  className="progress-red w-full md:w-[390px] h-3"
+                  max={100}
+                  value={80}
+                />
+                <span className="bg-white p-1 rounded-full border-2 border-[#ef4444] absolute right-[75px] -top-2 ">
+                  80
+                </span>
+              </span>
             </div>
           </div>
         </div>
+
         <div className="relative">
           <img
             ref={icon1Ref}

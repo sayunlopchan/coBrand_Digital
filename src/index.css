@@ -50,13 +50,13 @@
 
 @keyframes animate {
   0% {
-    border-radius: 90% 40% 30% 70% / 60% 20% 70% 40%;
+    border-radius: 100% 50% 30% 70% / 60% 50% 50% 60%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 30% 60% 70% 70% / 50% 60% 30% 60%;
   }
   100% {
-    border-radius: 90% 40% 30% 70% / 60% 20% 70% 40%;
+    border-radius: 100% 50% 30% 70% / 60% 50% 50% 60%;
   }
 }
 
@@ -174,14 +174,47 @@ progress {
   -moz-appearance: none;
 }
 
+.progress-purple::-webkit-progress-bar {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  border-radius: 9999px; /* Rounded full */
+}
+
+.progress-purple::-webkit-progress-value {
+  background-color: #a855f7; /* Tailwind purple-500 */
+  border-radius: 9999px; /* Rounded full */
+}
+
 .progress-purple::-moz-progress-bar {
-  background-color: #a855f7;
+  background-color: #a855f7; /* Tailwind purple-500 */
+  border-radius: 9999px; /* Rounded full */
+}
+
+.progress-blue::-webkit-progress-bar {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  border-radius: 9999px; /* Rounded full */
+}
+
+.progress-blue::-webkit-progress-value {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 9999px; /* Rounded full */
 }
 
 .progress-blue::-moz-progress-bar {
-  background-color: #3b82f6;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 9999px; /* Rounded full */
+}
+
+.progress-red::-webkit-progress-bar {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  border-radius: 9999px; /* Rounded full */
+}
+
+.progress-red::-webkit-progress-value {
+  background-color: #ef4444; /* Tailwind red-500 */
+  border-radius: 9999px; /* Rounded full */
 }
 
 .progress-red::-moz-progress-bar {
-  background-color: #ef4444;
+  background-color: #ef4444; /* Tailwind red-500 */
+  border-radius: 9999px; /* Rounded full */
 }

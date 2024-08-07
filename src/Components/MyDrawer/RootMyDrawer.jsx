@@ -18,6 +18,7 @@ import socialIcon2 from "../../assets/image/socialmedia-icons/instagram.svg";
 import socialIcon3 from "../../assets/image/socialmedia-icons/whatsapp.svg";
 import socialIcon4 from "../../assets/image/socialmedia-icons/viber.svg";
 import socialIcon5 from "../../assets/image/socialmedia-icons/linkedin.svg";
+import { Button } from "@material-tailwind/react";
 
 const RootMyDrawer = ({ darkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,17 +69,20 @@ const RootMyDrawer = ({ darkMode }) => {
       {/* Drawer */}
       <div
         ref={drawerRef}
-        className={`fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] md:w-[70vw] bg-gray-900 text-white transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] bg-gray-900 text-white transform transition-transform duration-300 z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* logo */}
-        <div className="w-[200px] flex items-center gap-4 p-2">
-          {darkMode ? (
-            <img src={darkLogo} alt="coBrand primary logo" />
-          ) : (
-            <img src={logo} alt="coBrand primary logo" />
-          )}
+        <div className=" flex justify-center items-center p-2">
+          <div className="w-[200px]">
+            {darkMode ? (
+              <img src={darkLogo} alt="coBrand primary logo" />
+            ) : (
+              <img src={logo} alt="coBrand primary logo" />
+            )}
+          </div>
+
           <ThemeMode darkMode={darkMode} />
         </div>
 
@@ -135,11 +139,10 @@ const RootMyDrawer = ({ darkMode }) => {
           </div>
         </div>
         {/* close button */}
-        <div
-          onClick={toggleDrawer}
-          className="flex justify-center mt-10 text-2xl"
-        >
-          <IoClose size={40} />
+        <div className="flex justify-center items-center mt-10">
+          <Button onClick={toggleDrawer} className=" ">
+            <IoClose size={40} />
+          </Button>
         </div>
       </div>
     </div>

@@ -35,10 +35,16 @@ const AboutUs = ({ darkMode }) => {
           </div>
           <div>
             <p className={`${darkMode ? "text-gray-500" : "text-gray-600"}`}>
-              <strong className="text-black text-lg">CoBrand Digital</strong> is
-              a dynamic agency dedicated to accelerating your business's success
-              in the digital landscape. We specialize in driving digital growth
-              through tailored strategies and cutting-edge solutions. Our
+              <strong
+                className={`${
+                  darkMode ? "text-gray-50" : "text-gray-900"
+                } text-lg`}
+              >
+                CoBrand Digital
+              </strong>{" "}
+              is a dynamic agency dedicated to accelerating your business's
+              success in the digital landscape. We specialize in driving digital
+              growth through tailored strategies and cutting-edge solutions. Our
               comprehensive training programs cover essential skills including
               web design and development, graphic design, content creation,
               social media management, and photography/videography. Whether

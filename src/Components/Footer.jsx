@@ -17,7 +17,9 @@ const Footer = ({ darkMode }) => {
             various digital marketing services in Nepal to enhance businesses
             online presence.
           </p>
-          <button className="bg-blue-400 py-4">Connect With us</button>
+          <button className="bg-blue-400 mx-5 my-5 py-2 px-3 rounded-lg">
+            Connect With us
+          </button>
         </div>
         <div>
           <h1 className="text-lg md:text-2xl font-bold ">Services</h1>

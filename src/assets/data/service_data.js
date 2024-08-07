@@ -23,7 +23,7 @@ let service_data = [
   {
     image: service3,
     name: 'Graphic Design',
-    description: "“Upgrade your online identity with our exceptional graphics, effortlessly communicating your ideals and leaving a lasting, memorable impression.”",
+    description: '"Upgrade your online identity with our exceptional graphics, effortlessly communicating your ideals and leaving a lasting, memorable impression. Transform your brand\'s online presence with visually striking graphics that resonate with your audience.',
     bg_img: shape3
   },
 ];
