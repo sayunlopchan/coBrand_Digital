@@ -39,9 +39,8 @@ const Services = ({ darkMode }) => {
 
       <div className="flex items-center justify-center relative pb-96  ">
         <div
-          className={`absolute -top-20 w-[80vw] px-10 rounded-3xl ${
-            darkMode ? "bg-gray-900 shadow-gray-800" : "bg-white"
-          } shadow-sm`}
+          className={`absolute top-10 md:-top-20 w-[80vw] px-10 rounded-3xl ${darkMode ? "bg-gray-900 shadow-gray-800" : "bg-white"
+            } shadow-sm`}
         >
           <div className="flex items-center space-x-5 py-5 ">
             <h1 className="text-gray-500 text-sm md:text-md lg:text-lg">
@@ -75,16 +74,14 @@ const Services = ({ darkMode }) => {
             <img
               src={tab}
               alt="img"
-              className={`absolute h-[60px] w-[80px] md:w-[110px] top-10 ${
-                darkMode ? "shadow-gray-400" : "shadow-gray-600 "
-              }`}
+              className={`absolute h-[60px] w-[80px] md:w-[110px] top-10 ${darkMode ? "shadow-gray-400" : "shadow-gray-600 "
+                }`}
             />
             <img
               src={tab1}
               alt="img"
-              className={`absolute h-[100px] bottom-10 right-0 shadow-lg rounded-lg ${
-                darkMode ? "shadow-gray-400" : "shadow-gray-600 "
-              }`}
+              className={`absolute h-[100px] bottom-10 right-0 shadow-lg rounded-lg ${darkMode ? "shadow-gray-400" : "shadow-gray-600 "
+                }`}
             />
           </div>
 
@@ -104,9 +101,8 @@ const Services = ({ darkMode }) => {
                 <li className="col-span-5">
                   <h4>Know Your Audience & Goals</h4>
                   <p
-                    className={`text-[12px] md:text-sm font-semibold ${
-                      darkMode ? "text-gray-400" : "text-gray-600"
-                    }`}
+                    className={`text-[12px] md:text-sm font-semibold ${darkMode ? "text-gray-400" : "text-gray-600"
+                      }`}
                   >
                     Define their demographics, interests, and online behavior.
                   </p>
@@ -118,9 +114,8 @@ const Services = ({ darkMode }) => {
                 <li className="col-span-5">
                   <h4>Creative & Compelling Content</h4>
                   <p
-                    className={`text-[12px] md:text-sm font-semibold ${
-                      darkMode ? "text-gray-400" : "text-gray-600"
-                    }`}
+                    className={`text-[12px] md:text-sm font-semibold ${darkMode ? "text-gray-400" : "text-gray-600"
+                      }`}
                   >
                     Be Authentic & Consistent,Always Focus on value.
                   </p>
@@ -132,9 +127,8 @@ const Services = ({ darkMode }) => {
                 <li className="col-span-5">
                   <h4>Engage & Analyze</h4>
                   <p
-                    className={`text-[12px] md:text-sm font-semibold ${
-                      darkMode ? "text-gray-400" : "text-gray-600"
-                    }`}
+                    className={`text-[12px] md:text-sm font-semibold ${darkMode ? "text-gray-400" : "text-gray-600"
+                      }`}
                   >
                     Social media is a two-way street! Actively engage with your
                     followers
@@ -162,9 +156,8 @@ const Services = ({ darkMode }) => {
           </h1>
 
           <p
-            className={`relative z-0 text-sm md:text-lg text-center px-10 font-semibold ${
-              darkMode ? "text-gray-400" : ""
-            }`}
+            className={`relative z-0 text-sm md:text-lg text-center px-10 font-semibold ${darkMode ? "text-gray-400" : ""
+              }`}
           >
             Being one of the emerging digital marketing agency of Nepal, Our
             mission is to grow every businesses in digital landscape.

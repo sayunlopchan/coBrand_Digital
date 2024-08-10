@@ -150,45 +150,35 @@ const MoreDetails = ({ darkMode }) => {
             behavior.
           </p>
 
-          <div className="flex flex-col gap-10 text-sm text-gray-500">
-            <div>
+          <div className="flex flex-col gap-10 items-center  md:items-start text-sm text-gray-500">
+            <div className=" w-[90%]">
               <p>Social Media Marketing </p>
-              <span className="relative">
-                <progress
-                  className="progress-purple w-full md:w-[390px] h-3"
-                  max={100}
-                  value={90}
-                />
-                <span className="bg-white p-1 rounded-full border-2 border-[#a855f7] absolute right-9 -top-2 ">
-                  90
-                </span>
-              </span>
+              <div className="progress-bar">
+                <div className="juice bg-purple-400 w-[95%]">
+                  <span className="border-purple-400">95</span>
+                </div>
+              </div>
             </div>
-            <div>
+
+
+            <div className="w-[90%]">
               <p>Graphic Design </p>
-              <span className="relative">
-                <progress
-                  className="progress-blue w-full md:w-[390px] h-3"
-                  max={100}
-                  value={85}
-                />
-                <span className="bg-white p-1 rounded-full border-2 border-[#3b82f6] absolute right-14 -top-2 ">
-                  90
-                </span>
-              </span>
+              <div className="progress-bar">
+                <div className="juice bg-blue-500 w-[80%]">
+                  <span className="border-blue-500">80</span>
+                </div>
+              </div>
             </div>
-            <div>
+
+
+            <div className="w-[90%]">
               <p> Web Development</p>
-              <span className="relative">
-                <progress
-                  className="progress-red w-full md:w-[390px] h-3"
-                  max={100}
-                  value={80}
-                />
-                <span className="bg-white p-1 rounded-full border-2 border-[#ef4444] absolute right-[75px] -top-2 ">
-                  80
-                </span>
-              </span>
+              <div className="progress-bar">
+                <div className="juice bg-red-500 w-[85%]">
+                  <span className="border-red-500">85</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -209,6 +199,7 @@ const MoreDetails = ({ darkMode }) => {
           <img src={laptopboy} alt="" className="mx-auto" />
         </div>
       </div>
+
 
       {/* counter */}
       <div>
@@ -251,6 +242,7 @@ const MoreDetails = ({ darkMode }) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
