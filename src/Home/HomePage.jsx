@@ -10,7 +10,7 @@ import Testimonials from "./UI/Testimonials";
 
 
 import MoreDetails from "./UI/MoreDetails";
-import PreLoader from "../Components/preloader/PreLoader";
+
 
 const HomePage = ({ darkMode }) => {
   return (
@@ -22,7 +22,7 @@ const HomePage = ({ darkMode }) => {
       <MoreDetails darkMode={darkMode} />
       <Testimonials darkMode={darkMode} />
       <GoogleReviews darkMode={darkMode} />
-      <PreLoader />
+
     </div>
   );
 };
