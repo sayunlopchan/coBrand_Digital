@@ -14,8 +14,7 @@ import { FaStar } from "react-icons/fa";
 const TestimonialSwiper = ({ data }) => {
   return (
     <div className="my-10">
-      {/* <h1 className="gradient-Text font-semibold w-screen
-      ]">Testimonials</h1> */}
+
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
@@ -54,7 +53,6 @@ const TestimonialSwiper = ({ data }) => {
 
               </div>
             </div>
-
           </SwiperSlide>
         ))}
       </Swiper>

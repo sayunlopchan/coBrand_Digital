@@ -1,0 +1,13 @@
+.container {
+  @apply w-[100vh] m-auto mt-[45%] md:mt-[20%] flex justify-center items-start;
+}
+.wrapper {
+  @apply relative;
+}
+.spinner {
+  @apply mx-auto border-blue-500 border-t-4 rounded-full size-[150px] animate-spin absolute -top-5 -left-5;
+}
+
+.spinner img {
+  @apply absolute top-0;
+}
