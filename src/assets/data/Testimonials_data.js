@@ -1,6 +1,6 @@
 import user1 from '../image/testimonials/rajesh_sir.jpg'
 import user2 from '../image/testimonials/juliya-mam.jpg'
-import user3 from '../image/testimonials/bikash_tiwari.jpg'
+// import user3 from '../image/testimonials/bikash_tiwari.jpg'
 import user4 from '../image/testimonials/hari_thapa.jpg'
 import user5 from '../image/testimonials/amzad_khan.jpg'
 
@@ -21,13 +21,13 @@ let Testimonials = [
     review:
       "Extremely satisfied with the service. At first, i was skeptical but i was suprised by their ideas and responsiveness.I highly recommend their services.",
   },
-  {
-    img: user3,
-    name: "Bikash Tiwari",
-    brand: "CEO of Another Best School",
-    review:
-      "Working with Cobrand Digital has been a game-changer for our business. Their strategic approach, attention to detail, and innovative campaigns have significantly boosted our online presence and ROI.Highly recommended!!",
-  },
+  // {
+  //   img: user3,
+  //   name: "Bikash Tiwari",
+  //   brand: "CEO of Another Best School",
+  //   review:
+  //     "Working with Cobrand Digital has been a game-changer for our business. Their strategic approach, attention to detail, and innovative campaigns have significantly boosted our online presence and ROI.Highly recommended!!",
+  // },
   {
     img: user4,
     name: "Hari Thapa",

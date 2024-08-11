@@ -30,15 +30,13 @@ const RootLayout = ({ darkMode, setDarkMode }) => {
 
   return (
     <div
-      className={`min-h-screen ${
-        darkMode ? "bg-black text-white" : "bg-white text-black"
-      }`}
+      className={`min-h-screen ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+        }`}
     >
       <ScrollToTop />
       <header
-        className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${
-          showHeader ? "translate-y-0" : "-translate-y-full"
-        } ${darkMode ? "bg-gray-900 shadow-md" : "bg-white shadow-md"}`}
+        className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${showHeader ? "translate-y-0" : "-translate-y-full"
+          } ${darkMode ? "bg-gray-900 shadow-md" : "bg-white shadow-md"}`}
       >
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       </header>

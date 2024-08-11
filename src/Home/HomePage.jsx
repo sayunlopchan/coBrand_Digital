@@ -18,8 +18,8 @@ const HomePage = ({ darkMode }) => {
       <OurServices darkMode={darkMode} />
       <SwiperUi data={data} darkMode={darkMode} />
       <MoreDetails darkMode={darkMode} />
-      {/* <Testimonials darkMode={darkMode} /> */}
-      {/* <GoogleReviews darkMode={darkMode} /> */}
+      <Testimonials darkMode={darkMode} />
+      <GoogleReviews darkMode={darkMode} />
     </div>
   );
 };

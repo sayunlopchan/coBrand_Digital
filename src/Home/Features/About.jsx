@@ -9,7 +9,7 @@ import StaticHeader from "../../Components/StaticHeader";
 
 const About = ({ darkMode }) => {
   return (
-    <div className="px-10">
+    <div className="px-10" >
       <StaticHeader darkMode={darkMode} />
       <div className="lg:grid lg:grid-cols-2 p-10">
         <div>
@@ -31,7 +31,7 @@ const About = ({ darkMode }) => {
             className="w-[400px] mx-auto"
           />
 
-          <p className={`text-gray-400`}>
+          <p className={` ${darkMode ? 'text-gray-500' : 'text-gray-800'}`}>
             <strong>CoBrand Digital</strong> is a dynamic agency dedicated to
             accelerating your business's success in the digital landscape. We
             specialize in driving digital growth through tailored strategies and
@@ -47,7 +47,7 @@ const About = ({ darkMode }) => {
         <div className="pt-10">
           <div className=" p-5">
             <h2 className="text-2xl font-semibold">Our mission</h2>
-            <p className="text-gray-400">
+            <p className={` ${darkMode ? 'text-gray-500' : 'text-gray-800'}`}>
               At Cobrand Digital Pvt. Ltd., We are dedicated to transform
               businesses into digital success stories. Our mission is to be the
               driving force behind your online success, leveraging cutting-edge
@@ -58,7 +58,7 @@ const About = ({ darkMode }) => {
 
           <div className=" p-5">
             <h2 className="text-2xl font-semibold">Our purpose</h2>
-            <p className="text-gray-400">
+            <p className={` ${darkMode ? 'text-gray-500' : 'text-gray-800'}`}>
               We are on a quest to be the perfect digital partner that
               businesses needs. Upgrade Your Brands with our dynamic blend of
               focus on seamless user experiences, enhanced functionality, and
@@ -86,8 +86,8 @@ const About = ({ darkMode }) => {
                   <img src={person.img} alt={person.name} />
                 </div>
                 <h4 className="font-bold text-lg">{person.name}</h4>
-                <p className="text-gray-500 text-md">{person.about}</p>
-                <div className="space-x-1 text-[12px] text-gray-500">
+                <p className="text-gray-700 text-md font-semibold">{person.about}</p>
+                <div className="space-x-1 text-[12px] text-gray-600">
                   {person.social.facebook && (
                     <NavLink
                       to={person.social.facebook}
@@ -118,7 +118,7 @@ const About = ({ darkMode }) => {
           })}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

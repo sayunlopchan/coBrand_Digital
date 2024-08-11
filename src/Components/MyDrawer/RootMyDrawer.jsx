@@ -69,9 +69,8 @@ const RootMyDrawer = ({ darkMode }) => {
       {/* Drawer */}
       <div
         ref={drawerRef}
-        className={`fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] bg-gray-900 text-white transform transition-transform duration-300 z-50 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px]  transform transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "translate-x-full"
+          } ${darkMode ? 'bg-gray-900' : 'bg-white'}`}
       >
         {/* logo */}
         <div className=" flex justify-center items-center p-2">

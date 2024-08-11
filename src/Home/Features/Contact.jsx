@@ -10,7 +10,7 @@ import StaticHeader from "../../Components/StaticHeader";
 
 const Contact = ({ darkMode }) => {
   return (
-    <div className={`${darkMode ? "" : "contact-bg"}`}>
+    <div className={`${darkMode ? '' : 'contact-bg'}`}>
       <div className="px-10">
         <StaticHeader darkMode={darkMode} />
       </div>
@@ -25,9 +25,8 @@ const Contact = ({ darkMode }) => {
 
           <NavLink
             to="#"
-            className={`flex justify-between p-4 ${
-              darkMode ? "bg-gray-700" : "bg-gray-50"
-            }`}
+            className={`flex justify-between p-4 ${darkMode ? "bg-gray-700" : "bg-gray-50"
+              }`}
           >
             <div className="flex gap-4">
               <img src={mail} alt="mail" />
@@ -40,9 +39,8 @@ const Contact = ({ darkMode }) => {
 
           <NavLink
             to="#"
-            className={`flex justify-between p-4 ${
-              darkMode ? "bg-gray-700" : "bg-gray-50"
-            }`}
+            className={`flex justify-between p-4 ${darkMode ? "bg-gray-700" : "bg-gray-50"
+              }`}
           >
             <div href="" className="flex gap-4">
               <img src={telephone} alt="" />
@@ -53,9 +51,8 @@ const Contact = ({ darkMode }) => {
 
           <NavLink
             to="#"
-            className={`flex justify-between p-4 ${
-              darkMode ? "bg-gray-700" : "bg-gray-50"
-            }`}
+            className={`flex justify-between p-4 ${darkMode ? "bg-gray-700" : "bg-gray-50"
+              }`}
           >
             <div className="flex gap-4">
               <img src={telephone} alt="" />
@@ -67,14 +64,11 @@ const Contact = ({ darkMode }) => {
 
         <form
           action=""
-          className={`space-y-2 p-10 rounded-lg mx-10 bg-white ${
-            darkMode ? " shadow-gray-800 text-black bg-gray-800" : ""
-          }`}
+          className={`space-y-2 p-10 rounded-lg mx-10 bg-white ${darkMode ? " shadow-gray-800 text-black bg-gray-800" : ""
+            }`}
         >
           <h1
-            className={`text-xl font-bold text-center ${
-              darkMode ? " text-white" : "text-black"
-            }`}
+            className="text-xl font-bold text-center text-black"
           >
             Contct us
           </h1>
@@ -118,7 +112,7 @@ const Contact = ({ darkMode }) => {
       <div className="lg:grid lg:grid-cols-2 p-10 flex flex-col justify-center items-center">
         <section className="space-y-5 py-5">
           <div>
-            <span className="text-sm text-gray-400">Our Office</span>
+            <span className="text-sm text-gray-700">Our Office</span>
             <h1 className="text-3xl font-bold">
               Visit our office to know more about us
             </h1>
@@ -129,7 +123,7 @@ const Contact = ({ darkMode }) => {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">Nepal</h2>
 
-            <div className="text-gray-400">
+            <div className="text-gray-700">
               <p>Siddharthanagar - 09, Bhairahawa</p>
               <p>Rupandehi</p>
             </div>

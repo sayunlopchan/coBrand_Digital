@@ -136,32 +136,33 @@ const MoreDetails = ({ darkMode }) => {
       </div>
 
       {/* man */}
-      <div ref={gridRef} className="lg:grid grid-cols-2 py-[100px]">
-        <div className="mt-10 space-y-5">
+      <div ref={gridRef} className="lg:grid grid-cols-2 py-[100px] px-10  ">
+        <div className="mt-10 space-y-5 ">
           <span className="gradient-Text font-semibold">
             Looking for best results?
           </span>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-2xl md:text-5xl font-bold">
             Best Digital Partner For Your Brand
           </h1>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm ">
             As an emerging digital marketing agency of Nepal, We come with
             unique ideas and content that relates with ever changing audience
             behavior.
           </p>
 
-          <div className="flex flex-col gap-10 items-center  md:items-start text-sm text-gray-500">
-            <div className=" w-[90%]">
+          <div className={`flex flex-col gap-10 items-center md:items-start text-sm font-semibold ${darkMode ? 'text-white' : 'text-black'}`}>
+
+            <div className="w-[100%] space-y-1">
               <p>Social Media Marketing </p>
-              <div className="progress-bar">
-                <div className="juice bg-purple-400 w-[95%]">
-                  <span className="border-purple-400">95</span>
+              <div className="progress-bar ">
+                <div className="juice bg-[#A44CEE] w-[95%]">
+                  <span className="border-[#A44CEE]">95</span>
                 </div>
               </div>
             </div>
 
 
-            <div className="w-[90%]">
+            <div className="w-[100%] space-y-1">
               <p>Graphic Design </p>
               <div className="progress-bar">
                 <div className="juice bg-blue-500 w-[80%]">
@@ -171,7 +172,7 @@ const MoreDetails = ({ darkMode }) => {
             </div>
 
 
-            <div className="w-[90%]">
+            <div className="w-[100%] space-y-1">
               <p> Web Development</p>
               <div className="progress-bar">
                 <div className="juice bg-red-500 w-[85%]">
@@ -180,6 +181,7 @@ const MoreDetails = ({ darkMode }) => {
               </div>
 
             </div>
+
           </div>
         </div>
 
